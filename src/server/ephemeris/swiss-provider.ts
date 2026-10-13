@@ -77,7 +77,12 @@ let cachedModule: SwephModule | null = null;
 export async function loadSweph(): Promise<SwephModule> {
   if (cachedModule) return cachedModule;
   try {
-    const mod = (await import("sweph")) as unknown as { default?: SwephModule } & SwephModule;
+    // Opaque to the bundler on purpose: sweph (AGPL) must never be traced into a production
+    // build. It resolves at runtime only when an operator explicitly selects this provider.
+    const specifier = "sweph";
+    const mod = (await import(/* webpackIgnore: true */ /* turbopackIgnore: true */ specifier)) as unknown as {
+      default?: SwephModule;
+    } & SwephModule;
     cachedModule = (mod.default ?? mod) as SwephModule;
     return cachedModule;
   } catch {

@@ -28,9 +28,11 @@ not legal advice.
 - `sweph` ≥ 2.10.1 is AGPL-3.0; LGPL-3.0 applies only to professional-licence holders.
 
 **How SoulLetter uses it:** `sweph` is a `devDependency`, the data files are downloaded on
-demand to `tools/reference/ephe/` and git-ignored, and `next.config.ts` marks `sweph` as an
-external server package. It is used only to generate reference fixtures and run local
-cross-checks. A production build installed with `npm ci --omit=dev` does not contain it.
+demand to `tools/reference/ephe/` and git-ignored, and it is used only to generate reference
+fixtures and run local cross-checks. Hosts such as Vercel install devDependencies to build, so
+the adapter loads `sweph` through a bundler-opaque runtime import and `next.config.ts` also
+excludes it from output tracing: no deployed function contains it (checked: no `.nft.json`
+trace references `sweph`).
 
 **Using Swiss Ephemeris in production** (`EPHEMERIS_PROVIDER=swiss-ephemeris`) is possible but
 deliberately gated: the server refuses to start the provider unless

@@ -59,6 +59,21 @@ All variables are documented in [`.env.example`](.env.example). The important on
 
 No API keys are required to run the app.
 
+### Deploying to Vercel
+
+Import the repository with the **Next.js** preset, root directory `./`, and leave the build,
+output and install commands on their defaults. Set these environment variables for Production
+and Preview:
+
+| Variable | Value | Why |
+|---|---|---|
+| `SHARE_TOKEN_SECRET` | 32+ random characters, e.g. from `node -e "console.log(require('crypto').randomBytes(32).toString('base64url'))"` | Share links are disabled in production without it. |
+| `TRUST_PROXY_HEADERS` | `true` | Vercel overwrites `X-Forwarded-For` with the real client IP; without this every visitor shares one rate-limit bucket. |
+
+Leave `EPHEMERIS_PROVIDER` and the `SWISS_*` variables unset. For a commercial site, set
+`OPEN_METEO_API_KEY` (or `GEOCODING_PROVIDER=disabled`), because Open-Meteo's free tier is
+non-commercial. Rate limits are kept in each function instance's memory.
+
 ## Architecture
 
 ```

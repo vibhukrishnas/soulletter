@@ -20,6 +20,14 @@ const nextConfig: NextConfig = {
   // sweph is a native AGPL-licensed addon that is only loaded when the operator
   // explicitly selects the Swiss Ephemeris provider; never bundle it.
   serverExternalPackages: ["sweph"],
+  // sweph is a devDependency (installed for the build, used only by local reference tests).
+  // Keep it and the Swiss data files out of every deployed function so production ships
+  // no AGPL code. Selecting EPHEMERIS_PROVIDER=swiss-ephemeris therefore requires a
+  // licence decision first: move sweph to dependencies and remove these excludes.
+  outputFileTracingExcludes: {
+    "/*": ["./node_modules/sweph/**/*", "./tools/reference/ephe/**/*"],
+    "/**/*": ["./node_modules/sweph/**/*", "./tools/reference/ephe/**/*"],
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
