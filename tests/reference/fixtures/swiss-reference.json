@@ -1,0 +1,3528 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-10-12T19:41:41.525Z",
+  "engine": "Swiss Ephemeris 2.10.03 via npm sweph",
+  "ephemerisFiles": [
+    "sepl_18.se1",
+    "semo_18.se1"
+  ],
+  "settings": {
+    "siderealMode": "SE_SIDM_LAHIRI (traditional sidereal method, no SE_SIDBIT options)",
+    "flags": "SEFLG_SWIEPH | SEFLG_SIDEREAL | SEFLG_SPEED (sidereal); SEFLG_SWIEPH | SEFLG_SPEED (tropical apparent, true equinox)",
+    "houses": "houses_ex2(..., SEFLG_SIDEREAL, lat, lon, 'W') — whole sign",
+    "utcConversion": "swe_utc_to_jd (UTC with leap seconds → TT and UT1)"
+  },
+  "license": "Values generated with AGPL-3.0 Swiss Ephemeris for local verification only.",
+  "cases": [
+    {
+      "id": "delhi-1990-10-15-1430-IST",
+      "utc": "1990-10-15T09:00:00Z",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "note": "Audit reference case: 1990-10-15 14:30 Asia/Kolkata (UTC+05:30), New Delhi.",
+      "jdUt": 2448179.8749974114,
+      "jdTt": 2448179.875661852,
+      "ayanamshaMeanDeg": 23.728396736542038,
+      "ayanamshaTrueDeg": 23.732097596661937,
+      "ascendantSiderealDeg": 290.2698913160824,
+      "ramcDeg": 235.84549961578844,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 178.01830781090118,
+          "tropicalApparentLongitudeDeg": 201.7504054075631,
+          "latitudeDeg": -0.00013956037792662123,
+          "speedDegPerDay": 0.9913814644890884,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 140.11475371094662,
+          "tropicalApparentLongitudeDeg": 163.84685130760855,
+          "latitudeDeg": -3.2088638877769267,
+          "speedDegPerDay": 12.849554929695103,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 173.1668684265571,
+          "tropicalApparentLongitudeDeg": 196.898966023219,
+          "latitudeDeg": 1.3875983251012889,
+          "speedDegPerDay": 1.7375527059650044,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 173.58611945181818,
+          "tropicalApparentLongitudeDeg": 197.3182170484801,
+          "latitudeDeg": 1.3007594656260115,
+          "speedDegPerDay": 1.251129469063514,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 50.617418436180756,
+          "tropicalApparentLongitudeDeg": 74.34951603284269,
+          "latitudeDeg": -0.6219176766729252,
+          "speedDegPerDay": 0.0778992246299682,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 106.66696708275126,
+          "tropicalApparentLongitudeDeg": 130.3990646794132,
+          "latitudeDeg": 0.4201257173790334,
+          "speedDegPerDay": 0.13088687894541723,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 265.37657159397634,
+          "tropicalApparentLongitudeDeg": 289.10866919063824,
+          "latitudeDeg": -0.05426778400668113,
+          "speedDegPerDay": 0.036194749687864076,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 279.51218380121685,
+          "tropicalApparentLongitudeDeg": 303.24428139787875,
+          "latitudeDeg": 2.4175470700678966e-15,
+          "speedDegPerDay": -0.052992021697717245,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 280.48725805458463,
+          "tropicalApparentLongitudeDeg": 304.2193556512466,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.11276885977705171,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "delhi-1943-06-01-1200-war-time",
+      "utc": "1943-06-01T05:30:00Z",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "note": "Historical offset: 12:00 local in Asia/Kolkata during WWII used UTC+06:30.",
+      "jdUt": 2430876.7291666665,
+      "jdTt": 2430876.7294695443,
+      "ayanamshaMeanDeg": 23.066738700609548,
+      "ayanamshaTrueDeg": 23.063327278987888,
+      "ascendantSiderealDeg": 120.73529480199802,
+      "ramcDeg": 48.539947579890395,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 46.794828785126036,
+          "tropicalApparentLongitudeDeg": 69.85815606411393,
+          "latitudeDeg": -0.00008203833736527111,
+          "speedDegPerDay": 0.9586709730448091,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 26.901010755716083,
+          "tropicalApparentLongitudeDeg": 49.96433803470397,
+          "latitudeDeg": -5.037187502890422,
+          "speedDegPerDay": 12.763064780586236,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 34.47779154652213,
+          "tropicalApparentLongitudeDeg": 57.54111882551002,
+          "latitudeDeg": -3.4356396459449177,
+          "speedDegPerDay": -0.2680019293244713,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 90.16088471010758,
+          "tropicalApparentLongitudeDeg": 113.22421198909548,
+          "latitudeDeg": 2.4581827211363505,
+          "speedDegPerDay": 1.0905093871244531,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 340.51970344105604,
+          "tropicalApparentLongitudeDeg": 3.5830307200439155,
+          "latitudeDeg": -1.7835008499822602,
+          "speedDegPerDay": 0.7389150272376689,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 90.93654919788634,
+          "tropicalApparentLongitudeDeg": 113.99987647687423,
+          "latitudeDeg": 0.4300074425481019,
+          "speedDegPerDay": 0.18764578902441684,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 52.103518936271136,
+          "tropicalApparentLongitudeDeg": 75.16684621525903,
+          "latitudeDeg": -1.3596302053763665,
+          "speedDegPerDay": 0.12961914514078904,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 116.44124763709735,
+          "tropicalApparentLongitudeDeg": 139.5045749160852,
+          "latitudeDeg": 2.4175470700678966e-15,
+          "speedDegPerDay": -0.05299209230380517,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 115.46827205662869,
+          "tropicalApparentLongitudeDeg": 138.5315993356166,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.19258339408652073,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "new-york-2021-11-07-0130-edt",
+      "utc": "2021-11-07T05:30:00Z",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "note": "Ambiguous local time: first occurrence of 01:30 (EDT, UTC−04:00).",
+      "jdUt": 2459525.729165238,
+      "jdTt": 2459525.7299674074,
+      "ayanamshaMeanDeg": 24.16232766972928,
+      "ayanamshaTrueDeg": 24.15769907981947,
+      "ascendantSiderealDeg": 128.27681892870925,
+      "ramcDeg": 55.134546503774885,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 200.86407632662244,
+          "tropicalApparentLongitudeDeg": 225.02177540644195,
+          "latitudeDeg": -0.00013244378315665652,
+          "speedDegPerDay": 1.0037222502571514,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 233.75106244924825,
+          "tropicalApparentLongitudeDeg": 257.90876152906776,
+          "latitudeDeg": -1.4739308773069641,
+          "speedDegPerDay": 14.929431847911243,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 187.89554379438792,
+          "tropicalApparentLongitudeDeg": 212.05324287420743,
+          "latitudeDeg": 1.6622669432373263,
+          "speedDegPerDay": 1.5996649682009605,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 247.52460045133358,
+          "tropicalApparentLongitudeDeg": 271.68229953115303,
+          "latitudeDeg": -3.813798320783563,
+          "speedDegPerDay": 0.9365136300079732,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 190.98147592888992,
+          "tropicalApparentLongitudeDeg": 215.13917500870946,
+          "latitudeDeg": 0.40711893861177334,
+          "speedDegPerDay": 0.6757349376498608,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 298.835383605428,
+          "tropicalApparentLongitudeDeg": 322.99308268524743,
+          "latitudeDeg": -1.1004778317501616,
+          "speedDegPerDay": 0.0656696137051288,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 283.33407245334627,
+          "tropicalApparentLongitudeDeg": 307.4917715331658,
+          "latitudeDeg": -0.8165120281684088,
+          "speedDegPerDay": 0.044694073769005895,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 38.27261636498502,
+          "tropicalApparentLongitudeDeg": 62.430315444804485,
+          "latitudeDeg": -2.4175470700678966e-15,
+          "speedDegPerDay": -0.05299198347416718,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 37.579158901536466,
+          "tropicalApparentLongitudeDeg": 61.73685798135602,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.013492518096447645,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "southern-hemisphere-sydney",
+      "utc": "2005-01-20T02:15:00Z",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "note": "Southern-hemisphere Ascendant.",
+      "jdUt": 2453390.5937440996,
+      "jdTt": 2453390.5944928704,
+      "ayanamshaMeanDeg": 23.92767733092478,
+      "ayanamshaTrueDeg": 23.92582694552302,
+      "ascendantSiderealDeg": 5.0608658361558625,
+      "ramcDeg": 304.52071118159813,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 276.1967393166153,
+          "tropicalApparentLongitudeDeg": 300.1225662621383,
+          "latitudeDeg": 0.0001007207641614949,
+          "speedDegPerDay": 1.0175405709756877,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 38.008132376620495,
+          "tropicalApparentLongitudeDeg": 61.93395932214351,
+          "latitudeDeg": 2.843637843937283,
+          "speedDegPerDay": 12.051902275217902,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 260.35485720962333,
+          "tropicalApparentLongitudeDeg": 284.28068415514633,
+          "latitudeDeg": -0.8686189746782954,
+          "speedDegPerDay": 1.4972978726650448,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 259.0879890216883,
+          "tropicalApparentLongitudeDeg": 283.01381596721137,
+          "latitudeDeg": -0.07517883545715323,
+          "speedDegPerDay": 1.2526362956494543,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 233.663101204865,
+          "tropicalApparentLongitudeDeg": 257.588928150388,
+          "latitudeDeg": -0.059006794105075276,
+          "speedDegPerDay": 0.6977043475096821,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 174.6705804932034,
+          "tropicalApparentLongitudeDeg": 198.59640743872643,
+          "latitudeDeg": 1.3737516733705515,
+          "speedDegPerDay": 0.04055530140816081,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 89.4495370469516,
+          "tropicalApparentLongitudeDeg": 113.37536399247463,
+          "latitudeDeg": 0.02055487786735733,
+          "speedDegPerDay": -0.08156193743829664,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 3.3857034665910195,
+          "tropicalApparentLongitudeDeg": 27.311530412114045,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201620331981,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 3.569367752287446,
+          "tropicalApparentLongitudeDeg": 27.49519469781045,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.0755154070615419,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "high-latitude-reykjavik",
+      "utc": "1985-06-21T12:00:00Z",
+      "latitude": 64.1466,
+      "longitude": -21.9426,
+      "note": "High latitude (below the 66° Ascendant limit).",
+      "jdUt": 2446237.9999952214,
+      "jdTt": 2446238.00062713,
+      "ayanamshaMeanDeg": 23.654134170592386,
+      "ayanamshaTrueDeg": 23.650810428394667,
+      "ascendantSiderealDeg": 143.53678502959144,
+      "ramcDeg": 67.68269497692886,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 66.39947915937239,
+          "tropicalApparentLongitudeDeg": 90.05028958776705,
+          "latitudeDeg": 0.0001224440296404127,
+          "speedDegPerDay": 0.9544088346877888,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 102.07801955003599,
+          "tropicalApparentLongitudeDeg": 125.72882997843067,
+          "latitudeDeg": 5.043525816674964,
+          "speedDegPerDay": 13.18385833518988,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 82.05826505788394,
+          "tropicalApparentLongitudeDeg": 105.70907548627862,
+          "latitudeDeg": 1.9687394587906784,
+          "speedDegPerDay": 1.8739731244079298,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 20.9006224130021,
+          "tropicalApparentLongitudeDeg": 44.551432841396775,
+          "latitudeDeg": -2.8455368220404154,
+          "speedDegPerDay": 1.0081235779657574,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 74.35484627690771,
+          "tropicalApparentLongitudeDeg": 98.00565670530239,
+          "latitudeDeg": 0.9165693836299371,
+          "speedDegPerDay": 0.6609283145896194,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 292.87747258933933,
+          "tropicalApparentLongitudeDeg": 316.528283017734,
+          "latitudeDeg": -0.716027466727434,
+          "speedDegPerDay": -0.05213830697942147,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 208.73071648312802,
+          "tropicalApparentLongitudeDeg": 232.38152691152268,
+          "latitudeDeg": 2.2882578947875425,
+          "speedDegPerDay": -0.050951102366457224,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 22.416069363740075,
+          "tropicalApparentLongitudeDeg": 46.066879792134735,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992035201683274,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 23.73962709977516,
+          "tropicalApparentLongitudeDeg": 47.39043752816985,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.11398628803679693,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-01",
+      "utc": "1921-07-23T04:08:08Z",
+      "latitude": 0.3564,
+      "longitude": -9.848,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2422893.6723148148,
+      "jdTt": 2422893.6725748833,
+      "ayanamshaMeanDeg": 22.761519656530382,
+      "ayanamshaTrueDeg": 22.76369395707327,
+      "ascendantSiderealDeg": 60.52957880690766,
+      "ramcDeg": 352.5425746739615,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 96.9829769806487,
+          "tropicalApparentLongitudeDeg": 119.74667093772199,
+          "latitudeDeg": 0.00009756202992249669,
+          "speedDegPerDay": 0.9546578077205741,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 311.560728399814,
+          "tropicalApparentLongitudeDeg": 334.3244223568873,
+          "latitudeDeg": 3.686889265866075,
+          "speedDegPerDay": 11.869636874982206,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 79.11857657477988,
+          "tropicalApparentLongitudeDeg": 101.88227053185315,
+          "latitudeDeg": -3.390330856834668,
+          "speedDegPerDay": 0.3765406846852129,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 52.624910482369806,
+          "tropicalApparentLongitudeDeg": 75.38860443944307,
+          "latitudeDeg": -2.7637082422435086,
+          "speedDegPerDay": 1.0637227054777212,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 89.90782232322078,
+          "tropicalApparentLongitudeDeg": 112.67151628029406,
+          "latitudeDeg": 0.9811080884488362,
+          "speedDegPerDay": 0.6516862968453516,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 144.03318053904138,
+          "tropicalApparentLongitudeDeg": 166.79687449611467,
+          "latitudeDeg": 1.131188631847646,
+          "speedDegPerDay": 0.17672855622566838,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 148.37620829634176,
+          "tropicalApparentLongitudeDeg": 171.13990225341504,
+          "latitudeDeg": 2.084678530514301,
+          "speedDegPerDay": 0.09247211715974527,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 179.48000692777057,
+          "tropicalApparentLongitudeDeg": 202.24370088484383,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299208017919329,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 178.76857443369218,
+          "tropicalApparentLongitudeDeg": 201.53226839076547,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.1395249760134384,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-02",
+      "utc": "1975-07-10T20:58:06Z",
+      "latitude": -36.8622,
+      "longitude": -113.6198,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2442604.373682897,
+      "jdTt": 2442604.374215093,
+      "ayanamshaMeanDeg": 23.515179109070345,
+      "ayanamshaTrueDeg": 23.519565568355667,
+      "ascendantSiderealDeg": 213.1741109463457,
+      "ramcDeg": 129.0659487207877,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 84.46035449920797,
+          "tropicalApparentLongitudeDeg": 107.97992006756365,
+          "latitudeDeg": -0.00003920239503271839,
+          "speedDegPerDay": 0.9538223337215523,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 107.5240752551089,
+          "tropicalApparentLongitudeDeg": 131.04364082346456,
+          "latitudeDeg": -4.845680189700965,
+          "speedDegPerDay": 14.666734135114542,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 64.34845237169174,
+          "tropicalApparentLongitudeDeg": 87.8680179400474,
+          "latitudeDeg": -1.8003677599665284,
+          "speedDegPerDay": 1.3726644181815284,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 127.49838398457409,
+          "tropicalApparentLongitudeDeg": 151.01794955292974,
+          "latitudeDeg": -0.14220257120249805,
+          "speedDegPerDay": 0.7102400281832625,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 13.329789532859724,
+          "tropicalApparentLongitudeDeg": 36.849355101215394,
+          "latitudeDeg": -1.6112295840787876,
+          "speedDegPerDay": 0.6972813056280227,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 359.2537424321776,
+          "tropicalApparentLongitudeDeg": 22.77330800053331,
+          "latitudeDeg": -1.3106111731081767,
+          "speedDegPerDay": 0.10623243370663557,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 88.36819430120462,
+          "tropicalApparentLongitudeDeg": 111.8877598695603,
+          "latitudeDeg": -0.04465948547000226,
+          "speedDegPerDay": 0.1295819025712011,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 214.96930878352262,
+          "tropicalApparentLongitudeDeg": 238.48887435187837,
+          "latitudeDeg": 2.417547070067896e-15,
+          "speedDegPerDay": -0.052992044799665454,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 216.37684557287096,
+          "tropicalApparentLongitudeDeg": 239.89641114122662,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.12301161751430506,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-03",
+      "utc": "1909-08-11T03:58:18Z",
+      "latitude": -30.4241,
+      "longitude": -85.4189,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2418529.6654861113,
+      "jdTt": 2418529.6656092852,
+      "ayanamshaMeanDeg": 22.59468143376314,
+      "ayanamshaTrueDeg": 22.590455830182204,
+      "ascendantSiderealDeg": 357.4468051560315,
+      "ramcDeg": 293.13572104468454,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 115.23146137634589,
+          "tropicalApparentLongitudeDeg": 137.82191720652807,
+          "latitudeDeg": 0.00010454969720871072,
+          "speedDegPerDay": 0.9598565790363897,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 58.59645535270337,
+          "tropicalApparentLongitudeDeg": 81.18691118288557,
+          "latitudeDeg": 0.5685937511775194,
+          "speedDegPerDay": 13.1622573085617,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 122.21376550706127,
+          "tropicalApparentLongitudeDeg": 144.80422133724346,
+          "latitudeDeg": 1.696778296920266,
+          "speedDegPerDay": 1.9343375859674692,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 143.059909311368,
+          "tropicalApparentLongitudeDeg": 165.6503651415502,
+          "latitudeDeg": 1.288270171693672,
+          "speedDegPerDay": 1.2123424373664207,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 343.2194416964795,
+          "tropicalApparentLongitudeDeg": 5.809897526661754,
+          "latitudeDeg": -5.163878793453684,
+          "speedDegPerDay": 0.16277321092235048,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 144.27170859621972,
+          "tropicalApparentLongitudeDeg": 166.86216442640193,
+          "latitudeDeg": 1.0777025148098283,
+          "speedDegPerDay": 0.20117059235661802,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 0.6084063682506623,
+          "tropicalApparentLongitudeDeg": 23.198862198432867,
+          "latitudeDeg": -2.6105153599654285,
+          "speedDegPerDay": -0.009998367406010823,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 50.737867680618216,
+          "tropicalApparentLongitudeDeg": 73.32832351080042,
+          "latitudeDeg": 2.4175470700678966e-15,
+          "speedDegPerDay": -0.052992157969218606,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 52.18655704413611,
+          "tropicalApparentLongitudeDeg": 74.77701287431832,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.011665778029867983,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-04",
+      "utc": "2008-01-15T15:12:45Z",
+      "latitude": 47.8833,
+      "longitude": 10.749,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2454481.1338508534,
+      "jdTt": 2454481.134608611,
+      "ayanamshaMeanDeg": 23.969385918969863,
+      "ayanamshaTrueDeg": 23.971979816775228,
+      "ascendantSiderealDeg": 84.63279404029804,
+      "ramcDeg": 353.3909026076709,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 270.8732424671797,
+          "tropicalApparentLongitudeDeg": 294.8452222839549,
+          "latitudeDeg": 0.000113053643651744,
+          "speedDegPerDay": 1.0186081598972465,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 358.4067049465928,
+          "tropicalApparentLongitudeDeg": 22.378684763368053,
+          "latitudeDeg": 4.226159242832944,
+          "speedDegPerDay": 14.011190260272803,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 287.7207302640735,
+          "tropicalApparentLongitudeDeg": 311.6927100808487,
+          "latitudeDeg": -1.4107777596430666,
+          "speedDegPerDay": 1.4825240761660332,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 235.36086933244334,
+          "tropicalApparentLongitudeDeg": 259.3328491492186,
+          "latitudeDeg": 1.5086799565461944,
+          "speedDegPerDay": 1.2230807412853926,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 61.648431473734334,
+          "tropicalApparentLongitudeDeg": 85.62041129050955,
+          "latitudeDeg": 3.5593047437465555,
+          "speedDegPerDay": -0.20374090982891063,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 252.36239039949086,
+          "tropicalApparentLongitudeDeg": 276.33437021626605,
+          "latitudeDeg": 0.14766818881818858,
+          "speedDegPerDay": 0.22382551421299718,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 133.937040049174,
+          "tropicalApparentLongitudeDeg": 157.90901986594923,
+          "latitudeDeg": 1.7393017498270047,
+          "speedDegPerDay": -0.047355598586227565,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 305.595796501627,
+          "tropicalApparentLongitudeDeg": 329.5677763184022,
+          "latitudeDeg": -1.2087735350339483e-15,
+          "speedDegPerDay": -0.052992005061358205,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 304.2008260989212,
+          "tropicalApparentLongitudeDeg": 328.1728059156965,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.004052186282192428,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-05",
+      "utc": "1977-12-14T00:09:50Z",
+      "latitude": -5.057,
+      "longitude": -169.6388,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2443491.506825212,
+      "jdTt": 2443491.507386389,
+      "ayanamshaMeanDeg": 23.549103787179376,
+      "ayanamshaTrueDeg": 23.550029200211284,
+      "ascendantSiderealDeg": 342.08981600471924,
+      "ramcDeg": 275.37544617611854,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 238.34039841207556,
+          "tropicalApparentLongitudeDeg": 261.8904276122868,
+          "latitudeDeg": 0.00019283648246473155,
+          "speedDegPerDay": 1.0173653332656842,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 284.5273289358166,
+          "tropicalApparentLongitudeDeg": 308.0773581360279,
+          "latitudeDeg": 4.552083217908256,
+          "speedDegPerDay": 14.592879947309042,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 253.5650986688759,
+          "tropicalApparentLongitudeDeg": 277.1151278690872,
+          "latitudeDeg": -0.2821949650323235,
+          "speedDegPerDay": -0.3551980920347973,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 228.94086985322562,
+          "tropicalApparentLongitudeDeg": 252.49089905343692,
+          "latitudeDeg": 0.42440444047660697,
+          "speedDegPerDay": 1.2580878629499022,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 108.0012923707187,
+          "tropicalApparentLongitudeDeg": 131.55132157092999,
+          "latitudeDeg": 3.087982379914462,
+          "speedDegPerDay": -0.016217198490976515,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 68.7368996515881,
+          "tropicalApparentLongitudeDeg": 92.2869288517994,
+          "latitudeDeg": -0.27731593872271104,
+          "speedDegPerDay": -0.13204539073839888,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 126.9927882167973,
+          "tropicalApparentLongitudeDeg": 150.54281741700856,
+          "latitudeDeg": 1.3530766349385577,
+          "speedDegPerDay": -0.004775087207471879,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 167.9583180374232,
+          "tropicalApparentLongitudeDeg": 191.50834723763447,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299205893161107,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 168.89608467143867,
+          "tropicalApparentLongitudeDeg": 192.44611387164994,
+          "latitudeDeg": -2.4308413302875734e-16,
+          "speedDegPerDay": -0.12265257016332519,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-06",
+      "utc": "1943-03-04T23:23:58Z",
+      "latitude": -55.0801,
+      "longitude": -40.2104,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2430788.474976852,
+      "jdTt": 2430788.4752780786,
+      "ayanamshaMeanDeg": 23.06336428644426,
+      "ayanamshaTrueDeg": 23.060818524743336,
+      "ascendantSiderealDeg": 211.19065776433487,
+      "ramcDeg": 112.62550003262203,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 320.45413944923945,
+          "tropicalApparentLongitudeDeg": 343.5149579739828,
+          "latitudeDeg": -0.000007006504189044752,
+          "speedDegPerDay": 1.0021827121539724,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 300.5136540079931,
+          "tropicalApparentLongitudeDeg": 323.5744725327365,
+          "latitudeDeg": 0.12844675657755564,
+          "speedDegPerDay": 14.703095694837662,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 297.591147825291,
+          "tropicalApparentLongitudeDeg": 320.65196635003434,
+          "latitudeDeg": -1.6719407604502263,
+          "speedDegPerDay": 1.4357749391932064,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 346.1626328298662,
+          "tropicalApparentLongitudeDeg": 9.223451354609502,
+          "latitudeDeg": -0.8425798038345407,
+          "speedDegPerDay": 1.2319732835128978,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 274.28956878566885,
+          "tropicalApparentLongitudeDeg": 297.3503873104122,
+          "latitudeDeg": -0.8640633312287641,
+          "speedDegPerDay": 0.7448696475706904,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 82.19461579123882,
+          "tropicalApparentLongitudeDeg": 105.25543431598216,
+          "latitudeDeg": 0.3718155903154663,
+          "speedDegPerDay": -0.02347203989482816,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 43.186316462549605,
+          "tropicalApparentLongitudeDeg": 66.24713498729294,
+          "latitudeDeg": -1.6091700757129426,
+          "speedDegPerDay": 0.04863975274329808,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 121.11801955695974,
+          "tropicalApparentLongitudeDeg": 144.17883808170305,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299209246472809,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 121.90656089117559,
+          "tropicalApparentLongitudeDeg": 144.96737941591888,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.001482482535783612,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-07",
+      "utc": "2016-10-21T08:08:13Z",
+      "latitude": 12.8055,
+      "longitude": 133.8713,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2457682.8390356675,
+      "jdTt": 2457682.8398285187,
+      "ayanamshaMeanDeg": 24.09184088606372,
+      "ayanamshaTrueDeg": 24.0898437413453,
+      "ascendantSiderealDeg": 355.26007048283367,
+      "ramcDeg": 286.1278087861893,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 184.26726034479745,
+          "tropicalApparentLongitudeDeg": 208.35710408614278,
+          "latitudeDeg": -0.0000792331625032516,
+          "speedDegPerDay": 0.994557701114104,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 75.73389795114402,
+          "tropicalApparentLongitudeDeg": 99.82374169248932,
+          "latitudeDeg": -4.540214948391138,
+          "speedDegPerDay": 13.992699535454653,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 179.95156553311057,
+          "tropicalApparentLongitudeDeg": 204.0414092744559,
+          "latitudeDeg": 1.1808840534953238,
+          "speedDegPerDay": 1.704577973398727,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 219.5973201409629,
+          "tropicalApparentLongitudeDeg": 243.68716388230823,
+          "latitudeDeg": -1.2420201208276573,
+          "speedDegPerDay": 1.2094087360536174,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 262.28369120862476,
+          "tropicalApparentLongitudeDeg": 286.37353494997006,
+          "latitudeDeg": -2.1101776491021242,
+          "speedDegPerDay": 0.7062843807560885,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 164.89475530283067,
+          "tropicalApparentLongitudeDeg": 188.98459904417598,
+          "latitudeDeg": 1.108947374399823,
+          "speedDegPerDay": 0.2099910567025915,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 229.23729700426568,
+          "tropicalApparentLongitudeDeg": 253.32714074561102,
+          "latitudeDeg": 1.3833298490490424,
+          "speedDegPerDay": 0.09453206184770709,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 135.9310365444904,
+          "tropicalApparentLongitudeDeg": 160.02088028583572,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299198826422649,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 137.5547533451704,
+          "tropicalApparentLongitudeDeg": 161.64459708651574,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.04314025413597617,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-08",
+      "utc": "1989-10-28T19:52:02Z",
+      "latitude": 22.7073,
+      "longitude": 104.0172,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2447828.3277943954,
+      "jdTt": 2447828.3284512036,
+      "ayanamshaMeanDeg": 23.714952489429038,
+      "ayanamshaTrueDeg": 23.71741147397727,
+      "ascendantSiderealDeg": 146.2896753610847,
+      "ramcDeg": 79.15790131286184,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 191.65609360285615,
+          "tropicalApparentLongitudeDeg": 215.3735050768334,
+          "latitudeDeg": -0.0002502022778205528,
+          "speedDegPerDay": 0.9990797534488658,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 182.79421136538036,
+          "tropicalApparentLongitudeDeg": 206.51162283935767,
+          "latitudeDeg": -4.486684425547669,
+          "speedDegPerDay": 11.849228279978277,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 183.35054361446947,
+          "tropicalApparentLongitudeDeg": 207.06795508844678,
+          "latitudeDeg": 1.3884497291007176,
+          "speedDegPerDay": 1.677780325530055,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 238.35907393933465,
+          "tropicalApparentLongitudeDeg": 262.07648541331196,
+          "latitudeDeg": -3.2952107180453196,
+          "speedDegPerDay": 1.0604322436309637,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 182.00786994027254,
+          "tropicalApparentLongitudeDeg": 205.72528141424982,
+          "latitudeDeg": 0.5721991629682002,
+          "speedDegPerDay": 0.6660748491063094,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 77.15962184396246,
+          "tropicalApparentLongitudeDeg": 100.87703331793973,
+          "latitudeDeg": -0.24240118444841474,
+          "speedDegPerDay": 0.0005669665860279474,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 255.37025122970826,
+          "tropicalApparentLongitudeDeg": 279.0876627036855,
+          "latitudeDeg": 0.39023226974822267,
+          "speedDegPerDay": 0.07219917615300757,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 298.1413807640559,
+          "tropicalApparentLongitudeDeg": 321.8587922380332,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992047486467755,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 299.33403550247164,
+          "tropicalApparentLongitudeDeg": 323.0514469764489,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.21245706418999682,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-09",
+      "utc": "2013-03-09T02:47:11Z",
+      "latitude": 44.4708,
+      "longitude": 11.6713,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2456360.6161019676,
+      "jdTt": 2456360.6168771293,
+      "ayanamshaMeanDeg": 24.041269522222706,
+      "ayanamshaTrueDeg": 24.0452433048314,
+      "ascendantSiderealDeg": 260.99931839238684,
+      "ramcDeg": 220.4316007707287,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 324.6469666489324,
+          "tropicalApparentLongitudeDeg": 348.6922099537638,
+          "latitudeDeg": 0.00024915113462192057,
+          "speedDegPerDay": 0.9999530175176741,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 289.9280797028569,
+          "tropicalApparentLongitudeDeg": 313.9733230076883,
+          "latitudeDeg": 5.053477220152735,
+          "speedDegPerDay": 14.062912451226513,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 315.5478560801962,
+          "tropicalApparentLongitudeDeg": 339.5930993850276,
+          "latitudeDeg": 3.131301504744522,
+          "speedDegPerDay": -0.8773253174871599,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 319.7296700104444,
+          "tropicalApparentLongitudeDeg": 343.77491331527574,
+          "latitudeDeg": -1.4221349890041948,
+          "speedDegPerDay": 1.2478258451832136,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 333.5003414627079,
+          "tropicalApparentLongitudeDeg": 357.5455847675393,
+          "latitudeDeg": -0.7817047180197859,
+          "speedDegPerDay": 0.7795187925292457,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 44.56167913055366,
+          "tropicalApparentLongitudeDeg": 68.60692243538506,
+          "latitudeDeg": -0.458693721121512,
+          "speedDegPerDay": 0.11532659514249738,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 197.19261164594568,
+          "tropicalApparentLongitudeDeg": 221.2378549507771,
+          "latitudeDeg": 2.592115040649157,
+          "speedDegPerDay": -0.030936600847980344,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 205.99827063438678,
+          "tropicalApparentLongitudeDeg": 230.04351393921817,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.0529920249464487,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 204.7536802495863,
+          "tropicalApparentLongitudeDeg": 228.7989235544177,
+          "latitudeDeg": 6.614192987716521e-17,
+          "speedDegPerDay": -0.15080949232983012,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-10",
+      "utc": "1938-12-21T18:59:42Z",
+      "latitude": 39.9271,
+      "longitude": -83.7102,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2429254.2914583334,
+      "jdTt": 2429254.291738057,
+      "ayanamshaMeanDeg": 23.00470508830358,
+      "ayanamshaTrueDeg": 23.00815795461376,
+      "ascendantSiderealDeg": 11.235418630749823,
+      "ramcDeg": 290.9006137015496,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 246.26042338519227,
+          "tropicalApparentLongitudeDeg": 269.268581339806,
+          "latitudeDeg": 0.00012022223889724258,
+          "speedDegPerDay": 1.0188432390308253,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 246.66622158077766,
+          "tropicalApparentLongitudeDeg": 269.67437953539144,
+          "latitudeDeg": 3.4802332784608376,
+          "speedDegPerDay": 12.035566378953376,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 231.06607909739472,
+          "tropicalApparentLongitudeDeg": 254.0742370520085,
+          "latitudeDeg": 2.987839028271427,
+          "speedDegPerDay": -0.4616516400937017,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 208.84319762202514,
+          "tropicalApparentLongitudeDeg": 231.85135557663892,
+          "latitudeDeg": 3.379248548969069,
+          "speedDegPerDay": 0.3963356129698449,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 193.12763801169524,
+          "tropicalApparentLongitudeDeg": 216.13579596630902,
+          "latitudeDeg": 0.9939426124602959,
+          "speedDegPerDay": 0.6240232340659915,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 305.5269793328683,
+          "tropicalApparentLongitudeDeg": 328.53513728748203,
+          "latitudeDeg": -1.026313213782399,
+          "speedDegPerDay": 0.17626015588296892,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 348.2643312641682,
+          "tropicalApparentLongitudeDeg": 11.272489218782027,
+          "latitudeDeg": -2.5430425542583524,
+          "speedDegPerDay": 0.012659060300713981,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 202.4175779194198,
+          "tropicalApparentLongitudeDeg": 225.42573587403362,
+          "latitudeDeg": 2.417547070067897e-15,
+          "speedDegPerDay": -0.05299206346352364,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 204.17947013740124,
+          "tropicalApparentLongitudeDeg": 227.18762809201496,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.1157537436000394,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-11",
+      "utc": "1954-06-05T07:30:39Z",
+      "latitude": 24.4318,
+      "longitude": -148.6521,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2434898.812951389,
+      "jdTt": 2434898.8133079233,
+      "ayanamshaMeanDeg": 23.220527572284503,
+      "ayanamshaTrueDeg": 23.224995033564134,
+      "ascendantSiderealDeg": 271.9275582113848,
+      "ramcDeg": 217.20481230450105,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 50.87741750116963,
+          "tropicalApparentLongitudeDeg": 74.10241253473376,
+          "latitudeDeg": -0.00009350865097605657,
+          "speedDegPerDay": 0.9574200839838546,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 105.0553092457762,
+          "tropicalApparentLongitudeDeg": 128.28030427934036,
+          "latitudeDeg": -2.0614310972113743,
+          "speedDegPerDay": 13.167919651991786,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 74.36297704404856,
+          "tropicalApparentLongitudeDeg": 97.58797207761269,
+          "latitudeDeg": 1.8394749624325732,
+          "speedDegPerDay": 1.1940151589207433,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 82.01376832221362,
+          "tropicalApparentLongitudeDeg": 105.23876335577775,
+          "latitudeDeg": 1.741360586244226,
+          "speedDegPerDay": 1.1963454702362235,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 254.27433015460517,
+          "tropicalApparentLongitudeDeg": 277.4993251881692,
+          "latitudeDeg": -3.0125653731513684,
+          "speedDegPerDay": -0.16012673296320418,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 69.42156494351497,
+          "tropicalApparentLongitudeDeg": 92.64655997707911,
+          "latitudeDeg": -0.07261034599834493,
+          "speedDegPerDay": 0.2216798608426744,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 190.19615636269188,
+          "tropicalApparentLongitudeDeg": 213.42115139625605,
+          "latitudeDeg": 2.6263444516588095,
+          "speedDegPerDay": -0.04792751295289655,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 263.30273811242057,
+          "tropicalApparentLongitudeDeg": 286.5277331459847,
+          "latitudeDeg": -2.417547070067897e-15,
+          "speedDegPerDay": -0.052992081636105776,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 261.83513498111284,
+          "tropicalApparentLongitudeDeg": 285.060130014677,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.02520192453568081,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-12",
+      "utc": "2012-10-19T08:55:26Z",
+      "latitude": 54.1325,
+      "longitude": -55.0334,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2456219.871832668,
+      "jdTt": 2456219.872606296,
+      "ayanamshaMeanDeg": 24.035886491282668,
+      "ayanamshaTrueDeg": 24.039628866850645,
+      "ascendantSiderealDeg": 167.5797209546155,
+      "ramcDeg": 107.06552201188896,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 182.34182927965907,
+          "tropicalApparentLongitudeDeg": 206.38145814650974,
+          "latitudeDeg": 0.000043039495878350364,
+          "speedDegPerDay": 0.9938493588538648,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 235.8680129198265,
+          "tropicalApparentLongitudeDeg": 259.9076417866772,
+          "latitudeDeg": 2.1000554669380174,
+          "speedDegPerDay": 14.54868494826704,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 205.19082943143974,
+          "tropicalApparentLongitudeDeg": 229.23045829829042,
+          "latitudeDeg": -2.40152809363052,
+          "speedDegPerDay": 1.251210364224102,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 144.93271368043236,
+          "tropicalApparentLongitudeDeg": 168.972342547283,
+          "latitudeDeg": 1.1822027846006744,
+          "speedDegPerDay": 1.1950174587820879,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 224.70758018550606,
+          "tropicalApparentLongitudeDeg": 248.74720905235674,
+          "latitudeDeg": -0.9668751124654318,
+          "speedDegPerDay": 0.7230604359174855,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 51.972322269728636,
+          "tropicalApparentLongitudeDeg": 76.01195113657928,
+          "latitudeDeg": -0.8309044943364803,
+          "speedDegPerDay": -0.04964804469106235,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 187.5739526893143,
+          "tropicalApparentLongitudeDeg": 211.61358155616497,
+          "latitudeDeg": 2.2336635207473257,
+          "speedDegPerDay": 0.12069025522729362,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 213.45659082250842,
+          "tropicalApparentLongitudeDeg": 237.49621968935915,
+          "latitudeDeg": -2.417547070067897e-15,
+          "speedDegPerDay": -0.05299198392406101,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 212.2874220491741,
+          "tropicalApparentLongitudeDeg": 236.32705091602477,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.024137835427071357,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-13",
+      "utc": "2000-04-29T15:57:42Z",
+      "latitude": -2.6678,
+      "longitude": -59.609,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2451664.1650724667,
+      "jdTt": 2451664.165812315,
+      "ayanamshaMeanDeg": 23.86164979034851,
+      "ayanamshaTrueDeg": 23.857111674868413,
+      "ascendantSiderealDeg": 100.60890470905082,
+      "ramcDeg": 37.72828697792428,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 15.770831056460649,
+          "tropicalApparentLongitudeDeg": 39.627942731329064,
+          "latitudeDeg": -0.000190912801310673,
+          "speedDegPerDay": 0.9715143037116978,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 318.16925534564336,
+          "tropicalApparentLongitudeDeg": 342.02636702051177,
+          "latitudeDeg": -3.4974795280957975,
+          "speedDegPerDay": 12.805919812210416,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 5.158507276003,
+          "tropicalApparentLongitudeDeg": 29.015618950871417,
+          "latitudeDeg": -1.4992778539227938,
+          "speedDegPerDay": 1.9741265337133869,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 4.354728357309816,
+          "tropicalApparentLongitudeDeg": 28.211840032178227,
+          "latitudeDeg": -1.3190758689599316,
+          "speedDegPerDay": 1.2313680161382445,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 33.22939895962545,
+          "tropicalApparentLongitudeDeg": 57.08651063449386,
+          "latitudeDeg": 0.37375227654640164,
+          "speedDegPerDay": 0.7053913924401716,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 21.994910896150714,
+          "tropicalApparentLongitudeDeg": 45.85202257101915,
+          "latitudeDeg": -0.872186364410793,
+          "speedDegPerDay": 0.23763285272353962,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 25.148794007478088,
+          "tropicalApparentLongitudeDeg": 49.0059056823465,
+          "latitudeDeg": -2.0088292556629463,
+          "speedDegPerDay": 0.12767977597012325,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 94.87262669495583,
+          "tropicalApparentLongitudeDeg": 118.72973836982423,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201978990972,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 94.36044888622277,
+          "tropicalApparentLongitudeDeg": 118.21756056109126,
+          "latitudeDeg": -4.0444721554942195e-16,
+          "speedDegPerDay": -0.08104391525702313,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-14",
+      "utc": "1972-07-15T07:42:49Z",
+      "latitude": 46.0396,
+      "longitude": -11.9797,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2441513.821404464,
+      "jdTt": 2441513.821900278,
+      "ayanamshaMeanDeg": 23.473476017586734,
+      "ayanamshaTrueDeg": 23.478000964385927,
+      "ascendantSiderealDeg": 116.89138583852224,
+      "ramcDeg": 36.98596698845585,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 89.43148452660083,
+          "tropicalApparentLongitudeDeg": 112.90948549098675,
+          "latitudeDeg": -0.0001598884831770071,
+          "speedDegPerDay": 0.9540404328377149,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 145.53794317652589,
+          "tropicalApparentLongitudeDeg": 169.0159441409118,
+          "latitudeDeg": -4.222315618371206,
+          "speedDegPerDay": 12.626895226456403,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 115.29390912789887,
+          "tropicalApparentLongitudeDeg": 138.7719100922848,
+          "latitudeDeg": -1.2979631720008489,
+          "speedDegPerDay": 0.7062764464596702,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 55.43273365711338,
+          "tropicalApparentLongitudeDeg": 78.91073462149929,
+          "latitudeDeg": -5.1219378372903295,
+          "speedDegPerDay": 0.22052961168003102,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 107.06219314916459,
+          "tropicalApparentLongitudeDeg": 130.5401941135505,
+          "latitudeDeg": 1.1805894701873691,
+          "speedDegPerDay": 0.6329116892362444,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 247.4705892901322,
+          "tropicalApparentLongitudeDeg": 270.9485902545182,
+          "latitudeDeg": 0.14098732867169683,
+          "speedDegPerDay": -0.11032408601087357,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 52.062684690007835,
+          "tropicalApparentLongitudeDeg": 75.54068565439377,
+          "latitudeDeg": -1.5271005779645699,
+          "speedDegPerDay": 0.11238198642552408,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 272.75989645080955,
+          "tropicalApparentLongitudeDeg": 296.2378974151955,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299204764078587,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 272.5406808401075,
+          "tropicalApparentLongitudeDeg": 296.0186818044935,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.005311337185959918,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-15",
+      "utc": "1931-02-18T23:05:34Z",
+      "latitude": 27.7001,
+      "longitude": -47.2909,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2426391.462199074,
+      "jdTt": 2426391.4624815485,
+      "ayanamshaMeanDeg": 22.895248286748128,
+      "ayanamshaTrueDeg": 22.894270117784533,
+      "ascendantSiderealDeg": 154.48006580255657,
+      "ramcDeg": 87.04244179619474,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 306.4510662430905,
+          "tropicalApparentLongitudeDeg": 329.345336360875,
+          "latitudeDeg": 0.000004328678829027674,
+          "speedDegPerDay": 1.008763502393103,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 321.74711841463306,
+          "tropicalApparentLongitudeDeg": 344.6413885324176,
+          "latitudeDeg": -2.6092307962993444,
+          "speedDegPerDay": 11.802616979445668,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 288.0172163813814,
+          "tropicalApparentLongitudeDeg": 310.9114864991659,
+          "latitudeDeg": -1.6655379486054143,
+          "speedDegPerDay": 1.5272594083398927,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 260.41157544530176,
+          "tropicalApparentLongitudeDeg": 283.3058455630863,
+          "latitudeDeg": 2.454804721742253,
+          "speedDegPerDay": 1.094708183449634,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 96.53110643712249,
+          "tropicalApparentLongitudeDeg": 119.42537655490702,
+          "latitudeDeg": 4.219148689352494,
+          "speedDegPerDay": -0.22874981750969506,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 77.99516787070822,
+          "tropicalApparentLongitudeDeg": 100.88943798849274,
+          "latitudeDeg": 0.24446434334417233,
+          "speedDegPerDay": -0.05353597027872721,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 266.3352936141155,
+          "tropicalApparentLongitudeDeg": 289.2295637319,
+          "latitudeDeg": 0.30220828166901903,
+          "speedDegPerDay": 0.09968035776064742,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 354.1248369517802,
+          "tropicalApparentLongitudeDeg": 17.019107069564768,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992071000131105,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 352.19578079819996,
+          "tropicalApparentLongitudeDeg": 15.090050915984508,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.08994538849103037,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-16",
+      "utc": "1968-09-16T01:21:41Z",
+      "latitude": -7.8204,
+      "longitude": 136.6745,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2440115.556724537,
+      "jdTt": 2440115.55717509,
+      "ayanamshaMeanDeg": 23.420006699937915,
+      "ayanamshaTrueDeg": 23.419219684630367,
+      "ascendantSiderealDeg": 223.66049173884548,
+      "ramcDeg": 152.15463314572906,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 149.8171000225991,
+          "tropicalApparentLongitudeDeg": 173.23631970722948,
+          "latitudeDeg": 0.0002711270167503866,
+          "speedDegPerDay": 0.9753698190410305,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 73.03396538401788,
+          "tropicalApparentLongitudeDeg": 96.45318506864824,
+          "latitudeDeg": 5.252490777089322,
+          "speedDegPerDay": 12.05926740752807,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 175.7278585336849,
+          "tropicalApparentLongitudeDeg": 199.14707821831527,
+          "latitudeDeg": -2.1365934644313183,
+          "speedDegPerDay": 1.141787000551891,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 173.51797937197884,
+          "tropicalApparentLongitudeDeg": 196.93719905660922,
+          "latitudeDeg": 0.6970164634818427,
+          "speedDegPerDay": 1.2282517567878932,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 122.98020476409864,
+          "tropicalApparentLongitudeDeg": 146.399424448729,
+          "latitudeDeg": 1.2145534318091702,
+          "speedDegPerDay": 0.6304485964565868,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 144.49022497726784,
+          "tropicalApparentLongitudeDeg": 167.90944466189822,
+          "latitudeDeg": 1.0135355464506723,
+          "speedDegPerDay": 0.21621422721446304,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 0.8217205295459308,
+          "tropicalApparentLongitudeDeg": 24.240940214176295,
+          "latitudeDeg": -2.743396693466136,
+          "speedDegPerDay": -0.061754513834621085,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 346.85679588424796,
+          "tropicalApparentLongitudeDeg": 10.27601556887834,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299203480217829,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 346.3430248872381,
+          "tropicalApparentLongitudeDeg": 9.762244571868427,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.015413589982906166,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-17",
+      "utc": "1999-09-09T17:49:23Z",
+      "latitude": -39.8117,
+      "longitude": -62.8876,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2451431.242632579,
+      "jdTt": 2451431.243370185,
+      "ayanamshaMeanDeg": 23.85274173941167,
+      "ayanamshaTrueDeg": 23.84925267490188,
+      "ascendantSiderealDeg": 274.8867961525827,
+      "ramcDeg": 192.79290088733543,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 142.7558411601293,
+          "tropicalApparentLongitudeDeg": 166.6050938350312,
+          "latitudeDeg": 0.0001946499022938482,
+          "speedDegPerDay": 0.9718016151592712,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 140.59951076430374,
+          "tropicalApparentLongitudeDeg": 164.44876343920563,
+          "latitudeDeg": 2.7376173895866476,
+          "speedDegPerDay": 13.272645415376648,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 143.78298705698023,
+          "tropicalApparentLongitudeDeg": 167.63223973188212,
+          "latitudeDeg": 1.6104991351280142,
+          "speedDegPerDay": 1.8801003463804054,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 114.97049233842395,
+          "tropicalApparentLongitudeDeg": 138.81974501332584,
+          "latitudeDeg": -7.080803613980008,
+          "speedDegPerDay": -0.05011231954805324,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 220.54828784039518,
+          "tropicalApparentLongitudeDeg": 244.3975405152971,
+          "latitudeDeg": -1.8148337774929466,
+          "speedDegPerDay": 0.6441616807471761,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 10.731839177904535,
+          "tropicalApparentLongitudeDeg": 34.58109185280641,
+          "latitudeDeg": -1.475419214644472,
+          "speedDegPerDay": -0.051702554363708166,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 23.230568014621323,
+          "tropicalApparentLongitudeDeg": 47.0798206895232,
+          "latitudeDeg": -2.5105881575389453,
+          "speedDegPerDay": -0.01893591777098326,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 107.21565532010912,
+          "tropicalApparentLongitudeDeg": 131.064907995011,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992020128268195,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 108.83190731547477,
+          "tropicalApparentLongitudeDeg": 132.68115999037659,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.06343822262328613,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-18",
+      "utc": "1962-11-11T03:32:22Z",
+      "latitude": -38.4382,
+      "longitude": 131.3927,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2437979.647476852,
+      "jdTt": 2437979.647875,
+      "ayanamshaMeanDeg": 23.3383317630786,
+      "ayanamshaTrueDeg": 23.333830644287794,
+      "ascendantSiderealDeg": 307.84078981912404,
+      "ramcDeg": 234.2869547061527,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 204.92842656222678,
+          "tropicalApparentLongitudeDeg": 228.2622572065146,
+          "latitudeDeg": -0.00012814768336771341,
+          "speedDegPerDay": 1.0050108139633436,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 14.091228502629487,
+          "tropicalApparentLongitudeDeg": 37.42505914691727,
+          "latitudeDeg": -5.001907221430697,
+          "speedDegPerDay": 15.09934115962699,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 196.50063594481315,
+          "tropicalApparentLongitudeDeg": 219.83446658910097,
+          "latitudeDeg": 1.0189726530596637,
+          "speedDegPerDay": 1.6240084155312904,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 207.65529065464125,
+          "tropicalApparentLongitudeDeg": 230.9891212989291,
+          "latitudeDeg": -4.44556396543285,
+          "speedDegPerDay": -0.6033265772167167,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 110.98029295382825,
+          "tropicalApparentLongitudeDeg": 134.31412359811603,
+          "latitudeDeg": 1.8156080532058398,
+          "speedDegPerDay": 0.40600441263405124,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 309.7579072197024,
+          "tropicalApparentLongitudeDeg": 333.09173786399015,
+          "latitudeDeg": -1.2627686556824627,
+          "speedDegPerDay": 0.04287504741450288,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 282.30014272431816,
+          "tropicalApparentLongitudeDeg": 305.6339733686059,
+          "latitudeDeg": -0.7508959439129871,
+          "speedDegPerDay": 0.0527893995888983,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 100.04299568015658,
+          "tropicalApparentLongitudeDeg": 123.37682632444437,
+          "latitudeDeg": -2.4175470700678966e-15,
+          "speedDegPerDay": -0.05299207352320806,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 99.46276845321148,
+          "tropicalApparentLongitudeDeg": 122.79659909749928,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.18681914300290461,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-19",
+      "utc": "2002-07-06T20:29:03Z",
+      "latitude": 24.5849,
+      "longitude": 26.5095,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2452462.3535044855,
+      "jdTt": 2452462.354249815,
+      "ayanamshaMeanDeg": 23.89217646404478,
+      "ayanamshaTrueDeg": 23.88765503444449,
+      "ascendantSiderealDeg": 320.46091545497654,
+      "ramcDeg": 258.4146535573258,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 80.69695283316253,
+          "tropicalApparentLongitudeDeg": 104.584607867607,
+          "latitudeDeg": -0.00005168158922373767,
+          "speedDegPerDay": 0.9537150942232777,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 36.88479845871737,
+          "tropicalApparentLongitudeDeg": 60.77245349316185,
+          "latitudeDeg": -1.527006436488499,
+          "speedDegPerDay": 12.588198569213336,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 65.02762078865993,
+          "tropicalApparentLongitudeDeg": 88.91527582310442,
+          "latitudeDeg": -0.5874869687582198,
+          "speedDegPerDay": 1.8310073940254625,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 121.54927541963346,
+          "tropicalApparentLongitudeDeg": 145.43693045407795,
+          "latitudeDeg": 1.6274930250352622,
+          "speedDegPerDay": 1.1368982430445862,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 91.74274728328604,
+          "tropicalApparentLongitudeDeg": 115.63040231773054,
+          "latitudeDeg": 1.1034072187915285,
+          "speedDegPerDay": 0.6445481524294095,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 90.34763653268688,
+          "tropicalApparentLongitudeDeg": 114.23529156713136,
+          "latitudeDeg": 0.2940525790947813,
+          "speedDegPerDay": 0.2219836379373314,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 58.06785848090866,
+          "tropicalApparentLongitudeDeg": 81.95551351535315,
+          "latitudeDeg": -1.2663326355628044,
+          "speedDegPerDay": 0.12350660731486822,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 52.57501729027602,
+          "tropicalApparentLongitudeDeg": 76.4626723247205,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201667052671,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 53.813179359440056,
+          "tropicalApparentLongitudeDeg": 77.70083439388458,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.020999484481174044,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-20",
+      "utc": "1914-11-28T02:56:57Z",
+      "latitude": 53.9888,
+      "longitude": -69.2583,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2420464.6228819443,
+      "jdTt": 2420464.62308296,
+      "ayanamshaMeanDeg": 22.66865476778278,
+      "ayanamshaTrueDeg": 22.670605035531203,
+      "ascendantSiderealDeg": 124.14186104249787,
+      "ramcDeg": 41.15010663274698,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 222.3718537342493,
+          "tropicalApparentLongitudeDeg": 245.04245876978047,
+          "latitudeDeg": 0.00009549643979072646,
+          "speedDegPerDay": 1.0124877100632987,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 351.83092304392096,
+          "tropicalApparentLongitudeDeg": 14.501528079452186,
+          "latitudeDeg": 3.4497900239672106,
+          "speedDegPerDay": 11.85964243550638,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 203.1837716432037,
+          "tropicalApparentLongitudeDeg": 225.85437667873495,
+          "latitudeDeg": 2.1052893257301095,
+          "speedDegPerDay": 1.2591305309752858,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 221.7391324624034,
+          "tropicalApparentLongitudeDeg": 244.40973749793457,
+          "latitudeDeg": -1.7039217382975607,
+          "speedDegPerDay": -0.6086093870005068,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 229.4402492726469,
+          "tropicalApparentLongitudeDeg": 252.11085430817806,
+          "latitudeDeg": -0.5226782449014277,
+          "speedDegPerDay": 0.7337789622585172,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 293.63051222742155,
+          "tropicalApparentLongitudeDeg": 316.3011172629528,
+          "latitudeDeg": -0.9222911348906996,
+          "speedDegPerDay": 0.14599388363214214,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 68.0089526117781,
+          "tropicalApparentLongitudeDeg": 90.6795576473093,
+          "latitudeDeg": -1.1699031447837658,
+          "speedDegPerDay": -0.06999779757646092,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 308.20041607062313,
+          "tropicalApparentLongitudeDeg": 330.8710211061544,
+          "latitudeDeg": -1.2087735350339483e-15,
+          "speedDegPerDay": -0.05299208664253081,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 308.4430634364559,
+          "tropicalApparentLongitudeDeg": 331.1136684719871,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.11126314307029041,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-21",
+      "utc": "1989-03-30T21:12:59Z",
+      "latitude": 36.6923,
+      "longitude": 103.1642,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2447616.3840134204,
+      "jdTt": 2447616.3846664815,
+      "ayanamshaMeanDeg": 23.706847134401926,
+      "ayanamshaTrueDeg": 23.708900993022695,
+      "ascendantSiderealDeg": 304.60951157917725,
+      "ramcDeg": 249.64155015331502,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 346.4298823263214,
+          "tropicalApparentLongitudeDeg": 10.138783319344052,
+          "latitudeDeg": -0.00003631812775766101,
+          "speedDegPerDay": 0.9875470584362462,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 261.9485378315649,
+          "tropicalApparentLongitudeDeg": 285.6574388245876,
+          "latitudeDeg": -3.9094129286340067,
+          "speedDegPerDay": 13.270170508026341,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 341.6216335366209,
+          "tropicalApparentLongitudeDeg": 5.330534529643568,
+          "latitudeDeg": -1.5741619355260166,
+          "speedDegPerDay": 1.968580494122906,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 345.1300292777,
+          "tropicalApparentLongitudeDeg": 8.838930270722665,
+          "latitudeDeg": -1.3392895577889652,
+          "speedDegPerDay": 1.2420149653735884,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 48.22246914614377,
+          "tropicalApparentLongitudeDeg": 71.93137013916646,
+          "latitudeDeg": 1.3524452132684985,
+          "speedDegPerDay": 0.6139519362236405,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 39.54813801428103,
+          "tropicalApparentLongitudeDeg": 63.2570390073037,
+          "latitudeDeg": -0.5546314168423685,
+          "speedDegPerDay": 0.18228318102102814,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 259.7834683238007,
+          "tropicalApparentLongitudeDeg": 283.4923693168234,
+          "latitudeDeg": 0.6756976110036678,
+          "speedDegPerDay": 0.037435826562527356,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 309.37271028839706,
+          "tropicalApparentLongitudeDeg": 333.0816112814197,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992014962522135,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 310.57623353889494,
+          "tropicalApparentLongitudeDeg": 334.2851345319176,
+          "latitudeDeg": -4.312840869285773e-16,
+          "speedDegPerDay": 0.00914594879125657,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-22",
+      "utc": "2011-01-01T10:51:59Z",
+      "latitude": -53.7795,
+      "longitude": 47.2838,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2455562.9527645702,
+      "jdTt": 2455562.953532222,
+      "ayanamshaMeanDeg": 24.010761498963177,
+      "ayanamshaTrueDeg": 24.01563684552437,
+      "ascendantSiderealDeg": 3.9725640340750275,
+      "ramcDeg": 311.0286965909299,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 256.64902910919994,
+          "tropicalApparentLongitudeDeg": 280.66466595472434,
+          "latitudeDeg": 0.000022768229371391234,
+          "speedDegPerDay": 1.019483482221033,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 221.32111345317404,
+          "tropicalApparentLongitudeDeg": 245.33675029869838,
+          "latitudeDeg": -2.4392266342855167,
+          "speedDegPerDay": 13.418353117024603,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 235.9477451503987,
+          "tropicalApparentLongitudeDeg": 259.9633819959231,
+          "latitudeDeg": 2.793814583035554,
+          "speedDegPerDay": 0.3061361328049165,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 209.98458294139687,
+          "tropicalApparentLongitudeDeg": 234.00021978692132,
+          "latitudeDeg": 3.5006566564444883,
+          "speedDegPerDay": 0.9644035345721295,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 264.7066590526729,
+          "tropicalApparentLongitudeDeg": 288.7222958981973,
+          "latitudeDeg": -0.9926638512554744,
+          "speedDegPerDay": 0.7740587673495696,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 332.5968760169009,
+          "tropicalApparentLongitudeDeg": 356.61251286242526,
+          "latitudeDeg": -1.2646201333908695,
+          "speedDegPerDay": 0.13510548464782596,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 172.6646755541119,
+          "tropicalApparentLongitudeDeg": 196.68031239963628,
+          "latitudeDeg": 2.4104854555311594,
+          "speedDegPerDay": 0.04349390865319641,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 248.26804610007795,
+          "tropicalApparentLongitudeDeg": 272.2836829456023,
+          "latitudeDeg": -2.417547070067896e-15,
+          "speedDegPerDay": -0.05299201869632417,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 248.75198766355007,
+          "tropicalApparentLongitudeDeg": 272.76762450907444,
+          "latitudeDeg": -2.6591539332932166e-16,
+          "speedDegPerDay": 0.011825448866614758,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-23",
+      "utc": "1991-03-04T13:34:25Z",
+      "latitude": -59.1784,
+      "longitude": 146.6483,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2448320.0655728416,
+      "jdTt": 2448320.0662405556,
+      "ayanamshaMeanDeg": 23.73375807153394,
+      "ayanamshaTrueDeg": 23.73821185829669,
+      "ascendantSiderealDeg": 261.2806250347571,
+      "ramcDeg": 152.07111611158177,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 319.73299918362954,
+          "tropicalApparentLongitudeDeg": 343.4712110419262,
+          "latitudeDeg": -0.00019244302592771265,
+          "speedDegPerDay": 1.0019701267695444,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 186.49254205611896,
+          "tropicalApparentLongitudeDeg": 210.2307539144157,
+          "latitudeDeg": -5.1299340386776375,
+          "speedDegPerDay": 12.670240176576353,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 321.93482449966615,
+          "tropicalApparentLongitudeDeg": 345.67303635796287,
+          "latitudeDeg": -1.5778581281151542,
+          "speedDegPerDay": 1.9147185313900459,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 348.78761682186865,
+          "tropicalApparentLongitudeDeg": 12.525828680165311,
+          "latitudeDeg": -0.6613516180727544,
+          "speedDegPerDay": 1.2249981763936566,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 51.56990351334257,
+          "tropicalApparentLongitudeDeg": 75.30811537163925,
+          "latitudeDeg": 2.145043554247178,
+          "speedDegPerDay": 0.4601850062544949,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 100.87632312094709,
+          "tropicalApparentLongitudeDeg": 124.61453497924379,
+          "latitudeDeg": 0.7920336483343376,
+          "speedDegPerDay": -0.08015382998047635,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 279.06025766343487,
+          "tropicalApparentLongitudeDeg": 302.79846952173153,
+          "latitudeDeg": -0.22267897302873244,
+          "speedDegPerDay": 0.09962810314603546,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 272.0832018839653,
+          "tropicalApparentLongitudeDeg": 295.82141374226194,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299202135340424,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 273.2044507924969,
+          "tropicalApparentLongitudeDeg": 296.9426626507936,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.11685663371559683,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-24",
+      "utc": "1963-09-19T15:44:49Z",
+      "latitude": -5.2009,
+      "longitude": -173.2758,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2438292.1561226854,
+      "jdTt": 2438292.1565261455,
+      "ayanamshaMeanDeg": 23.350281635754584,
+      "ayanamshaTrueDeg": 23.345662862564335,
+      "ascendantSiderealDeg": 124.0664975039113,
+      "ramcDeg": 60.754167562429956,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 152.63409795943898,
+          "tropicalApparentLongitudeDeg": 175.9797608220033,
+          "latitudeDeg": 0.00015252275145987551,
+          "speedDegPerDay": 0.9770760273109145,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 172.87139054999525,
+          "tropicalApparentLongitudeDeg": 196.2170534125596,
+          "latitudeDeg": 5.026862300954335,
+          "speedDegPerDay": 12.146815430282421,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 153.74308288610314,
+          "tropicalApparentLongitudeDeg": 177.0887457486675,
+          "latitudeDeg": -3.1719616187717037,
+          "speedDegPerDay": -1.0662940104075223,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 158.21169492583562,
+          "tropicalApparentLongitudeDeg": 181.55735778839994,
+          "latitudeDeg": 1.3141505745467221,
+          "speedDegPerDay": 1.244458988813795,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 191.53212747196577,
+          "tropicalApparentLongitudeDeg": 214.87779033453012,
+          "latitudeDeg": -0.22650268580872135,
+          "speedDegPerDay": 0.6751545096532654,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 353.51862648652724,
+          "tropicalApparentLongitudeDeg": 16.864289349091543,
+          "latitudeDeg": -1.614915743718004,
+          "speedDegPerDay": -0.11754850973479243,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 293.9332796521612,
+          "tropicalApparentLongitudeDeg": 317.2789425147256,
+          "latitudeDeg": -1.253881229519319,
+          "speedDegPerDay": -0.04960260910530944,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 83.48252270834378,
+          "tropicalApparentLongitudeDeg": 106.82818557090812,
+          "latitudeDeg": 2.4175470700678966e-15,
+          "speedDegPerDay": -0.05299210580461839,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 84.52208133627951,
+          "tropicalApparentLongitudeDeg": 107.86774419884384,
+          "latitudeDeg": 3.2851993430182137e-17,
+          "speedDegPerDay": -0.2070121982098137,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-25",
+      "utc": "1900-04-28T11:50:43Z",
+      "latitude": -50.3889,
+      "longitude": -140.3972,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2415137.993553241,
+      "jdTt": 2415137.9935345706,
+      "ayanamshaMeanDeg": 22.465022126688858,
+      "ayanamshaTrueDeg": 22.46925525559731,
+      "ascendantSiderealDeg": 325.57990347256793,
+      "ramcDeg": 253.27691364735236,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 15.253906532515963,
+          "tropicalApparentLongitudeDeg": 37.72316178811327,
+          "latitudeDeg": 0.00017342769431564554,
+          "speedDegPerDay": 0.9717270625371509,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 5.246455016543198,
+          "tropicalApparentLongitudeDeg": 27.71571027214052,
+          "latitudeDeg": 3.581836609835081,
+          "speedDegPerDay": 14.741120070098596,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 349.00913285518925,
+          "tropicalApparentLongitudeDeg": 11.478388110786595,
+          "latitudeDeg": -2.8734046041544192,
+          "speedDegPerDay": 1.2568801960053082,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 60.747655453087525,
+          "tropicalApparentLongitudeDeg": 83.21691070868484,
+          "latitudeDeg": 3.3784283582949333,
+          "speedDegPerDay": 0.9749103400124369,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 353.21679048635303,
+          "tropicalApparentLongitudeDeg": 15.686045741950341,
+          "latitudeDeg": -0.8534112782379425,
+          "speedDegPerDay": 0.7652791032897023,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 226.8969114064658,
+          "tropicalApparentLongitudeDeg": 249.3661666620631,
+          "latitudeDeg": 0.9162734814869855,
+          "speedDegPerDay": -0.09087981134270381,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 252.4053157570661,
+          "tropicalApparentLongitudeDeg": 274.8745710126634,
+          "latitudeDeg": 1.0230597031507485,
+          "speedDegPerDay": -0.022825176445617025,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 230.4697026488613,
+          "tropicalApparentLongitudeDeg": 252.93895790445862,
+          "latitudeDeg": 4.835094140135791e-15,
+          "speedDegPerDay": -0.052992100730042735,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 228.83027740955623,
+          "tropicalApparentLongitudeDeg": 251.29953266515355,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.0729814535272475,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-26",
+      "utc": "1994-12-20T04:40:46Z",
+      "latitude": 8.5308,
+      "longitude": -130.4521,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2449706.6949817613,
+      "jdTt": 2449706.695685,
+      "ayanamshaMeanDeg": 23.78678769273273,
+      "ayanamshaTrueDeg": 23.790059151455,
+      "ascendantSiderealDeg": 95.52198594129412,
+      "ramcDeg": 28.284462726232533,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 244.2714146836253,
+          "tropicalApparentLongitudeDeg": 268.0614738350803,
+          "latitudeDeg": -0.00005097214531623608,
+          "speedDegPerDay": 1.0178402352014275,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 87.67728433324126,
+          "tropicalApparentLongitudeDeg": 111.46734348469627,
+          "latitudeDeg": -4.7516128816819,
+          "speedDegPerDay": 12.326438528720473,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 247.68095360624272,
+          "tropicalApparentLongitudeDeg": 271.47101275769774,
+          "latitudeDeg": -1.729012231250865,
+          "speedDegPerDay": 1.5877020475405974,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 200.15234873452346,
+          "tropicalApparentLongitudeDeg": 223.94240788597847,
+          "latitudeDeg": 3.183346226208292,
+          "speedDegPerDay": 0.7537294747738598,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 127.73910146771436,
+          "tropicalApparentLongitudeDeg": 151.52916061916937,
+          "latitudeDeg": 3.0216878192778274,
+          "speedDegPerDay": 0.1603143858186277,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 218.50971771348483,
+          "tropicalApparentLongitudeDeg": 242.29977686493982,
+          "latitudeDeg": 0.7616718396709597,
+          "speedDegPerDay": 0.21070115714169782,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 313.31063696623625,
+          "tropicalApparentLongitudeDeg": 337.10069611769126,
+          "latitudeDeg": -1.8176179018681706,
+          "speedDegPerDay": 0.06728572307335427,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 198.60290975932995,
+          "tropicalApparentLongitudeDeg": 222.392968910785,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201770401634,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 200.1668876025162,
+          "tropicalApparentLongitudeDeg": 223.95694675397127,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.14584008773380433,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-27",
+      "utc": "2009-03-30T13:57:15Z",
+      "latitude": 19.6492,
+      "longitude": 174.5833,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2454921.081427451,
+      "jdTt": 2454921.0821896293,
+      "ayanamshaMeanDeg": 23.986212224749522,
+      "ayanamshaTrueDeg": 23.989864032893788,
+      "ascendantSiderealDeg": 268.0855926183648,
+      "ramcDeg": 211.9869182782251,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 346.0117860468757,
+          "tropicalApparentLongitudeDeg": 10.001650079769508,
+          "latitudeDeg": 0.00007816749493861943,
+          "speedDegPerDay": 0.9880312031933826,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 36.221255216689734,
+          "tropicalApparentLongitudeDeg": 60.211119249583525,
+          "latitudeDeg": 4.662859818947085,
+          "speedDegPerDay": 14.112137556545493,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 345.4251478635579,
+          "tropicalApparentLongitudeDeg": 9.415011896451702,
+          "latitudeDeg": -1.1799946605401628,
+          "speedDegPerDay": 2.0236800750041617,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 341.5415658668473,
+          "tropicalApparentLongitudeDeg": 5.531429899741056,
+          "latitudeDeg": 7.864351689083851,
+          "speedDegPerDay": -0.6116513679049739,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 318.10068179335144,
+          "tropicalApparentLongitudeDeg": 342.0905458262452,
+          "latitudeDeg": -1.1702602675503317,
+          "speedDegPerDay": 0.7820460083996684,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 294.8441287807552,
+          "tropicalApparentLongitudeDeg": 318.833992813649,
+          "latitudeDeg": -0.576506579844251,
+          "speedDegPerDay": 0.18961764206891532,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 142.73036195640032,
+          "tropicalApparentLongitudeDeg": 166.72022598929408,
+          "latitudeDeg": 2.2711988892292694,
+          "speedDegPerDay": -0.06966768088794376,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 282.28209310074357,
+          "tropicalApparentLongitudeDeg": 306.27195713363733,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201220961889,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 283.06832234420557,
+          "tropicalApparentLongitudeDeg": 307.0581863770994,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.10886842878058776,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-28",
+      "utc": "1903-04-10T06:01:47Z",
+      "latitude": 36.8566,
+      "longitude": -169.1784,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2416214.7512384257,
+      "jdTt": 2416214.7512666886,
+      "ayanamshaMeanDeg": 22.506184630765308,
+      "ayanamshaTrueDeg": 22.50735361855709,
+      "ascendantSiderealDeg": 180.9079961340196,
+      "ramcDeg": 118.56292160404035,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 356.69281332135273,
+          "tropicalApparentLongitudeDeg": 19.200166939909806,
+          "latitudeDeg": -0.00008123883769202466,
+          "speedDegPerDay": 0.9811758176564759,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 154.54327520932293,
+          "tropicalApparentLongitudeDeg": 177.05062882788002,
+          "latitudeDeg": -1.7140159322527857,
+          "speedDegPerDay": 13.761460693643444,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 353.57671706851227,
+          "tropicalApparentLongitudeDeg": 16.084070687069342,
+          "latitudeDeg": -1.16685994793357,
+          "speedDegPerDay": 2.0418961799049256,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 27.845280686147767,
+          "tropicalApparentLongitudeDeg": 50.35263430470486,
+          "latitudeDeg": 0.6360305920144483,
+          "speedDegPerDay": 1.2062118458886504,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 160.43356462419928,
+          "tropicalApparentLongitudeDeg": 182.94091824275637,
+          "latitudeDeg": 2.751889225495067,
+          "speedDegPerDay": -0.34877251720791624,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 318.8360297963848,
+          "tropicalApparentLongitudeDeg": 341.3433834149419,
+          "latitudeDeg": -0.9300777248826535,
+          "speedDegPerDay": 0.214473320887014,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 285.5265403678208,
+          "tropicalApparentLongitudeDeg": 308.0338939863779,
+          "latitudeDeg": -0.4099916800056481,
+          "speedDegPerDay": 0.062149566540949934,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 173.4100430202471,
+          "tropicalApparentLongitudeDeg": 195.91739663880418,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992097919645764,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 173.4213690515304,
+          "tropicalApparentLongitudeDeg": 195.9287226700875,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.0035901641873141233,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-29",
+      "utc": "2010-12-08T03:16:28Z",
+      "latitude": 14.4702,
+      "longitude": -24.3817,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2455538.6364337485,
+      "jdTt": 2455538.6372012035,
+      "ayanamshaMeanDeg": 24.009831483152766,
+      "ayanamshaTrueDeg": 24.014456384103802,
+      "ascendantSiderealDeg": 167.25794556464177,
+      "ramcDeg": 101.51654354910447,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 231.90121799880941,
+          "tropicalApparentLongitudeDeg": 255.91567438291318,
+          "latitudeDeg": 0.00015499812532338922,
+          "speedDegPerDay": 1.015819139632295,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 261.14061183805217,
+          "tropicalApparentLongitudeDeg": 285.155068222156,
+          "latitudeDeg": 1.1358962450262606,
+          "speedDegPerDay": 12.797466206652384,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 251.46187292788048,
+          "tropicalApparentLongitudeDeg": 275.4763293119843,
+          "latitudeDeg": -1.4402514242121207,
+          "speedDegPerDay": 0.37545667943785377,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 190.14818367038902,
+          "tropicalApparentLongitudeDeg": 214.1626400544928,
+          "latitudeDeg": 2.1864372360991653,
+          "speedDegPerDay": 0.6134588157590544,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 246.0945396031773,
+          "tropicalApparentLongitudeDeg": 270.1089959872811,
+          "latitudeDeg": -0.8604420915485169,
+          "speedDegPerDay": 0.7561916788710343,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 330.1234191123316,
+          "tropicalApparentLongitudeDeg": 354.13787549643536,
+          "latitudeDeg": -1.363852504257677,
+          "speedDegPerDay": 0.06542727924614149,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 171.1498233578756,
+          "tropicalApparentLongitudeDeg": 195.16427974197939,
+          "latitudeDeg": 2.309100815564709,
+          "speedDegPerDay": 0.07962823271677133,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 249.55661712438945,
+          "tropicalApparentLongitudeDeg": 273.5710735084932,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299201884899079,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 248.71615188219923,
+          "tropicalApparentLongitudeDeg": 272.730608266303,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.01300215288499416,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-30",
+      "utc": "1996-01-07T18:46:52Z",
+      "latitude": 10.1542,
+      "longitude": 76.2263,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2450090.282552568,
+      "jdTt": 2450090.2832660186,
+      "ayanamshaMeanDeg": 23.80145759675497,
+      "ayanamshaTrueDeg": 23.803545472032788,
+      "ascendantSiderealDeg": 170.89098823407542,
+      "ramcDeg": 104.56934510059368,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 262.9481368464488,
+          "tropicalApparentLongitudeDeg": 286.7516823184816,
+          "latitudeDeg": -0.00012907966290160355,
+          "speedDegPerDay": 1.0189135283400172,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 103.79284005020779,
+          "tropicalApparentLongitudeDeg": 127.59638552224057,
+          "latitudeDeg": -4.81337140025639,
+          "speedDegPerDay": 11.953779347235972,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 280.95161631330774,
+          "tropicalApparentLongitudeDeg": 304.75516178534053,
+          "latitudeDeg": 0.041897273743980425,
+          "speedDegPerDay": 0.38025790405867915,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 297.1454033804046,
+          "tropicalApparentLongitudeDeg": 320.9489488524374,
+          "latitudeDeg": -1.7547765325698148,
+          "speedDegPerDay": 1.2252631649840198,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 275.66638028995953,
+          "tropicalApparentLongitudeDeg": 299.46992576199233,
+          "latitudeDeg": -1.0833660534781653,
+          "speedDegPerDay": 0.7829415061362883,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 247.20396748094407,
+          "tropicalApparentLongitudeDeg": 271.00751295297687,
+          "latitudeDeg": 0.23644118772450134,
+          "speedDegPerDay": 0.22421163908559408,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 326.0813887661074,
+          "tropicalApparentLongitudeDeg": 349.88493423814015,
+          "latitudeDeg": -2.09741699144748,
+          "speedDegPerDay": 0.07677214846958016,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 178.2758307574164,
+          "tropicalApparentLongitudeDeg": 202.0793762294492,
+          "latitudeDeg": -1.2087735350339483e-15,
+          "speedDegPerDay": -0.05299202066748018,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 178.36628345892723,
+          "tropicalApparentLongitudeDeg": 202.16982893096002,
+          "latitudeDeg": 1.61850517133724e-16,
+          "speedDegPerDay": -0.22886559987236632,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-31",
+      "utc": "1996-11-15T23:19:42Z",
+      "latitude": 27.3885,
+      "longitude": 63.147,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2450403.472013517,
+      "jdTt": 2450403.4727336112,
+      "ayanamshaMeanDeg": 23.81343524912711,
+      "ayanamshaTrueDeg": 23.813559346168294,
+      "ascendantSiderealDeg": 172.51610332026019,
+      "ramcDeg": 108.38855162149073,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 210.06921076506177,
+          "tropicalApparentLongitudeDeg": 233.88277011123006,
+          "latitudeDeg": 0.0000624814772876536,
+          "speedDegPerDay": 1.007985531131876,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 272.6784632193896,
+          "tropicalApparentLongitudeDeg": 296.4920225655578,
+          "latitudeDeg": 4.84195467201808,
+          "speedDegPerDay": 14.265224801593503,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 218.17162534084017,
+          "tropicalApparentLongitudeDeg": 241.9851846870085,
+          "latitudeDeg": -1.1899325035649533,
+          "speedDegPerDay": 1.5476173020582404,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 177.4581917108327,
+          "tropicalApparentLongitudeDeg": 201.27175105700098,
+          "latitudeDeg": 1.8060105702715907,
+          "speedDegPerDay": 1.2273374861719002,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 135.15736445728447,
+          "tropicalApparentLongitudeDeg": 158.97092380345276,
+          "latitudeDeg": 1.831497467187582,
+          "speedDegPerDay": 0.5187751453563817,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 261.57361244091345,
+          "tropicalApparentLongitudeDeg": 285.3871717870818,
+          "latitudeDeg": -0.2765911885667345,
+          "speedDegPerDay": 0.18522088395661365,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 337.06815156429275,
+          "tropicalApparentLongitudeDeg": 0.8817109104610557,
+          "latitudeDeg": -2.53253242714794,
+          "speedDegPerDay": -0.030721634782762495,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 161.67928995511494,
+          "tropicalApparentLongitudeDeg": 185.49284930128323,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299202211618684,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 163.08401370602124,
+          "tropicalApparentLongitudeDeg": 186.89757305218956,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.06694586809771863,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-32",
+      "utc": "1945-04-29T12:52:50Z",
+      "latitude": 21.8781,
+      "longitude": -106.801,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2431575.0366898146,
+      "jdTt": 2431575.037004708,
+      "ayanamshaMeanDeg": 23.093438735558248,
+      "ayanamshaTrueDeg": 23.08836592338436,
+      "ascendantSiderealDeg": 19.29844365495399,
+      "ramcDeg": 303.5217183340715,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 15.741985088759183,
+          "tropicalApparentLongitudeDeg": 38.83035101214354,
+          "latitudeDeg": 0.00000958486108562575,
+          "speedDegPerDay": 0.9708187936832543,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 218.90338732574864,
+          "tropicalApparentLongitudeDeg": 241.99175324913304,
+          "latitudeDeg": 3.185098846649512,
+          "speedDegPerDay": 12.111145063490273,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 353.99587594416,
+          "tropicalApparentLongitudeDeg": 17.084241867544325,
+          "latitudeDeg": -1.9233968658381275,
+          "speedDegPerDay": 0.19244000113688683,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 355.1937412296904,
+          "tropicalApparentLongitudeDeg": 18.282107153074712,
+          "latitudeDeg": 3.7729884017612676,
+          "speedDegPerDay": -0.29709917796913743,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 334.3571114164646,
+          "tropicalApparentLongitudeDeg": 357.44547733984894,
+          "latitudeDeg": -1.2822457874670372,
+          "speedDegPerDay": 0.7708209319880587,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 144.78878595344665,
+          "tropicalApparentLongitudeDeg": 167.877151876831,
+          "latitudeDeg": 1.4540534686735678,
+          "speedDegPerDay": -0.04600481393652117,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 73.34160206893378,
+          "tropicalApparentLongitudeDeg": 96.42996799231814,
+          "latitudeDeg": -0.4639270336494732,
+          "speedDegPerDay": 0.08876263974774326,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 79.43648952166711,
+          "tropicalApparentLongitudeDeg": 102.52485544505147,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992090435327786,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 77.830110704489,
+          "tropicalApparentLongitudeDeg": 100.9184766278734,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.11961463724751834,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-33",
+      "utc": "1931-07-28T04:02:47Z",
+      "latitude": 42.8472,
+      "longitude": -6.7704,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2426550.668599537,
+      "jdTt": 2426550.6688818517,
+      "ayanamshaMeanDeg": 22.901335251132323,
+      "ayanamshaTrueDeg": 22.901010856956923,
+      "ascendantSiderealDeg": 86.37950970612867,
+      "ramcDeg": 358.7890747668847,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 101.2256705880839,
+          "tropicalApparentLongitudeDeg": 124.12668144504084,
+          "latitudeDeg": -0.0002003363284295962,
+          "speedDegPerDay": 0.9554017353879373,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 265.2691627802585,
+          "tropicalApparentLongitudeDeg": 288.17017363721544,
+          "latitudeDeg": -4.967302169001436,
+          "speedDegPerDay": 12.799663179925945,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 125.98780095816988,
+          "tropicalApparentLongitudeDeg": 148.88881181512684,
+          "latitudeDeg": 0.3141593096455796,
+          "speedDegPerDay": 1.3908447078938646,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 89.75770668323901,
+          "tropicalApparentLongitudeDeg": 112.65871754019594,
+          "latitudeDeg": 0.5027859509767424,
+          "speedDegPerDay": 1.226992977410963,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 154.33507191531325,
+          "tropicalApparentLongitudeDeg": 177.23608277227018,
+          "latitudeDeg": 0.5407996089034194,
+          "speedDegPerDay": 0.6079860580509489,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 99.50834917481212,
+          "tropicalApparentLongitudeDeg": 122.40936003176907,
+          "latitudeDeg": 0.4165991450128694,
+          "speedDegPerDay": 0.2222008255456639,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 265.9823585446313,
+          "tropicalApparentLongitudeDeg": 288.88336940158825,
+          "latitudeDeg": 0.1287981627166361,
+          "speedDegPerDay": -0.06995080355924646,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 345.68815908085855,
+          "tropicalApparentLongitudeDeg": 8.589169937815477,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992070569402056,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 344.59659114204084,
+          "tropicalApparentLongitudeDeg": 7.4976019989977605,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.18285384304537075,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-34",
+      "utc": "1978-02-05T02:19:00Z",
+      "latitude": 7.8734,
+      "longitude": -12.1745,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2443544.5965341083,
+      "jdTt": 2443544.597097037,
+      "ayanamshaMeanDeg": 23.55113399143329,
+      "ayanamshaTrueDeg": 23.55229366532827,
+      "ascendantSiderealDeg": 222.68449356492752,
+      "ramcDeg": 157.4628952283458,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 292.3717882616458,
+          "tropicalApparentLongitudeDeg": 315.92408192697405,
+          "latitudeDeg": 0.000206882258364495,
+          "speedDegPerDay": 1.014016891166489,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 257.27863731745134,
+          "tropicalApparentLongitudeDeg": 280.83093098277953,
+          "latitudeDeg": 5.095573718534571,
+          "speedDegPerDay": 14.921936720760776,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 277.11870116692756,
+          "tropicalApparentLongitudeDeg": 300.67099483225576,
+          "latitudeDeg": -1.5233549763620653,
+          "speedDegPerDay": 1.548863998315385,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 295.695457611976,
+          "tropicalApparentLongitudeDeg": 319.2477512773042,
+          "latitudeDeg": -1.3331281880882404,
+          "speedDegPerDay": 1.2548288310109028,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 92.84416123997374,
+          "tropicalApparentLongitudeDeg": 116.39645490530202,
+          "latitudeDeg": 4.361105209316872,
+          "speedDegPerDay": -0.3187473480440387,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 62.89607563089739,
+          "tropicalApparentLongitudeDeg": 86.44836929622568,
+          "latitudeDeg": -0.14215385399385366,
+          "speedDegPerDay": -0.04996294626285167,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 124.46741213133342,
+          "tropicalApparentLongitudeDeg": 148.01970579666167,
+          "latitudeDeg": 1.5232394894865187,
+          "speedDegPerDay": -0.07826344538351042,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 165.14498637744046,
+          "tropicalApparentLongitudeDeg": 188.69728004276874,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.052992025707130304,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 163.65597977445452,
+          "tropicalApparentLongitudeDeg": 187.20827343978277,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.13019261803164375,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-35",
+      "utc": "1972-10-14T14:08:43Z",
+      "latitude": -16.0177,
+      "longitude": 53.8391,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2441605.0893872525,
+      "jdTt": 2441605.0898863887,
+      "ayanamshaMeanDeg": 23.476966115427274,
+      "ayanamshaTrueDeg": 23.481099466415902,
+      "ascendantSiderealDeg": 355.0931216816401,
+      "ramcDeg": 289.23625765952033,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 177.84596842301528,
+          "tropicalApparentLongitudeDeg": 201.32706788943116,
+          "latitudeDeg": -0.00010345989979201423,
+          "speedDegPerDay": 0.991161851676152,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 257.21935610204855,
+          "tropicalApparentLongitudeDeg": 280.7004555684645,
+          "latitudeDeg": -0.9275559890647619,
+          "speedDegPerDay": 12.077522054943234,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 194.28882586474984,
+          "tropicalApparentLongitudeDeg": 217.76992533116575,
+          "latitudeDeg": -1.1238915362443045,
+          "speedDegPerDay": 1.4855867463488837,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 137.19400434376968,
+          "tropicalApparentLongitudeDeg": 160.67510381018556,
+          "latitudeDeg": 0.7711405781535695,
+          "speedDegPerDay": 1.1674388726885117,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 165.33120613488018,
+          "tropicalApparentLongitudeDeg": 188.8123056012961,
+          "latitudeDeg": 0.8701475519447005,
+          "speedDegPerDay": 0.6493218089140845,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 248.73154007447798,
+          "tropicalApparentLongitudeDeg": 272.21263954089386,
+          "latitudeDeg": -0.0541088340060194,
+          "speedDegPerDay": 0.13984894238102585,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 56.98621957677078,
+          "tropicalApparentLongitudeDeg": 80.46731904318668,
+          "latitudeDeg": -1.647899427361428,
+          "speedDegPerDay": -0.02190555525655874,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 267.92341991287213,
+          "tropicalApparentLongitudeDeg": 291.4045193792881,
+          "latitudeDeg": -2.417547070067897e-15,
+          "speedDegPerDay": -0.05299206398206927,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 267.7947801141406,
+          "tropicalApparentLongitudeDeg": 291.27587958055636,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.008196127091010454,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-36",
+      "utc": "1997-12-30T15:42:27Z",
+      "latitude": 2.6943,
+      "longitude": 133.317,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2450813.1544817076,
+      "jdTt": 2450813.155210463,
+      "ayanamshaMeanDeg": 23.829103258908276,
+      "ayanamshaTrueDeg": 23.827876826176396,
+      "ascendantSiderealDeg": 175.34430378109184,
+      "ramcDeg": 108.0483061724891,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 255.1572905044567,
+          "tropicalApparentLongitudeDeg": 278.9851673306331,
+          "latitudeDeg": 0.0000041179952252802325,
+          "speedDegPerDay": 1.0195537653539921,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 267.28716000101076,
+          "tropicalApparentLongitudeDeg": 291.1150368271871,
+          "latitudeDeg": 3.959473867227696,
+          "speedDegPerDay": 13.911242892692472,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 233.957336055936,
+          "tropicalApparentLongitudeDeg": 257.7852128821124,
+          "latitudeDeg": 2.695906459622234,
+          "speedDegPerDay": 0.4372306142376568,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 279.8181573331346,
+          "tropicalApparentLongitudeDeg": 303.64603415931094,
+          "latitudeDeg": 1.7127176490727172,
+          "speedDegPerDay": -0.15589434079815537,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 285.87973181978646,
+          "tropicalApparentLongitudeDeg": 309.70760864596286,
+          "latitudeDeg": -1.1745789416883297,
+          "speedDegPerDay": 0.7865284473262963,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 298.14120967255263,
+          "tropicalApparentLongitudeDeg": 321.969086498729,
+          "latitudeDeg": -0.8707782690805955,
+          "speedDegPerDay": 0.20636626695914584,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 349.8912837118936,
+          "tropicalApparentLongitudeDeg": 13.719160538070026,
+          "latitudeDeg": -2.5154945223839906,
+          "speedDegPerDay": 0.025945065122612347,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 139.96939060036345,
+          "tropicalApparentLongitudeDeg": 163.79726742653986,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299202503471635,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 138.67258844287696,
+          "tropicalApparentLongitudeDeg": 162.50046526905334,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.1513411186700982,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-37",
+      "utc": "1910-10-20T16:09:09Z",
+      "latitude": -16.5614,
+      "longitude": -114.8574,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2418965.173020833,
+      "jdTt": 2418965.1731616394,
+      "ayanamshaMeanDeg": 22.61133071688286,
+      "ayanamshaTrueDeg": 22.607309069805066,
+      "ascendantSiderealDeg": 231.4869975607448,
+      "ramcDeg": 155.66675332877156,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 183.78297019157299,
+          "tropicalApparentLongitudeDeg": 206.39027926137808,
+          "latitudeDeg": 0.0001041567631580421,
+          "speedDegPerDay": 0.9942261000998677,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 32.93937233017918,
+          "tropicalApparentLongitudeDeg": 55.54668139998425,
+          "latitudeDeg": 0.5735464447843981,
+          "speedDegPerDay": 14.984408253323766,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 169.04870350464773,
+          "tropicalApparentLongitudeDeg": 191.6560125744528,
+          "latitudeDeg": 2.002414292695592,
+          "speedDegPerDay": 1.5899420101559958,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 174.51216996493744,
+          "tropicalApparentLongitudeDeg": 197.1194790347425,
+          "latitudeDeg": 1.3774102187676798,
+          "speedDegPerDay": 1.251218360358935,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 176.14430722935174,
+          "tropicalApparentLongitudeDeg": 198.75161629915684,
+          "latitudeDeg": 0.6585413636995714,
+          "speedDegPerDay": 0.661065717885619,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 182.63475940581668,
+          "tropicalApparentLongitudeDeg": 205.24206847562178,
+          "latitudeDeg": 1.0665643967970042,
+          "speedDegPerDay": 0.21760283298443567,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 11.033340942982132,
+          "tropicalApparentLongitudeDeg": 33.6406500127872,
+          "latitudeDeg": -2.747754084820529,
+          "speedDegPerDay": -0.07941712952177456,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 27.659408929447473,
+          "tropicalApparentLongitudeDeg": 50.26671799925254,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299209058419198,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 26.694600946082264,
+          "tropicalApparentLongitudeDeg": 49.301910015887366,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.0072689649648932115,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-38",
+      "utc": "1904-08-16T04:50:40Z",
+      "latitude": 23.8097,
+      "longitude": 67.0414,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2416708.701851852,
+      "jdTt": 2416708.701902662,
+      "ayanamshaMeanDeg": 22.52506765035287,
+      "ayanamshaTrueDeg": 22.524491861921547,
+      "ascendantSiderealDeg": 170.1399830189195,
+      "ramcDeg": 103.86306475075833,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 120.34450828249234,
+          "tropicalApparentLongitudeDeg": 142.86900014441392,
+          "latitudeDeg": 0.0001414103611462186,
+          "speedDegPerDay": 0.9616026726921734,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 184.91371908189288,
+          "tropicalApparentLongitudeDeg": 207.43821094381443,
+          "latitudeDeg": 3.2906742126918718,
+          "speedDegPerDay": 14.159854675677854,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 147.3803018903083,
+          "tropicalApparentLongitudeDeg": 169.9047937522298,
+          "latitudeDeg": -1.3635417177805313,
+          "speedDegPerDay": 1.1184622031101923,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 131.07524243088994,
+          "tropicalApparentLongitudeDeg": 153.5997342928115,
+          "latitudeDeg": 1.4436325894244728,
+          "speedDegPerDay": 1.2349050119512592,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 98.16030801743179,
+          "tropicalApparentLongitudeDeg": 120.68479987935333,
+          "latitudeDeg": 1.0123016228143529,
+          "speedDegPerDay": 0.6447209715468205,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 7.662472395824508,
+          "tropicalApparentLongitudeDeg": 30.186964257746055,
+          "latitudeDeg": -1.427950301036313,
+          "speedDegPerDay": 0.013267310990075542,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 294.72586135238885,
+          "tropicalApparentLongitudeDeg": 317.2503532143104,
+          "latitudeDeg": -1.1705391147984912,
+          "speedDegPerDay": -0.07436487680271832,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 147.2345596965607,
+          "tropicalApparentLongitudeDeg": 169.75905155848224,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299203031214922,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 146.19718887832843,
+          "tropicalApparentLongitudeDeg": 168.72168074025,
+          "latitudeDeg": 0,
+          "speedDegPerDay": 0.0232321201772053,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-39",
+      "utc": "1995-07-07T23:43:20Z",
+      "latitude": 1.6204,
+      "longitude": 109.4705,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2449906.4884254,
+      "jdTt": 2449906.489134074,
+      "ayanamshaMeanDeg": 23.79442857482786,
+      "ayanamshaTrueDeg": 23.79710548039101,
+      "ascendantSiderealDeg": 95.42671135504374,
+      "ramcDeg": 30.772108226299622,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 81.5883678709894,
+          "tropicalApparentLongitudeDeg": 105.38547335138041,
+          "latitudeDeg": -0.000049435026428602115,
+          "speedDegPerDay": 0.9531257132255667,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 199.35546092180562,
+          "tropicalApparentLongitudeDeg": 223.15256640219664,
+          "latitudeDeg": 0.9163845663192508,
+          "speedDegPerDay": 14.270232658820705,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 61.944733411422334,
+          "tropicalApparentLongitudeDeg": 85.74183889181334,
+          "latitudeDeg": -1.619748491533152,
+          "speedDegPerDay": 1.4829195215157225,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 69.51983753261028,
+          "tropicalApparentLongitudeDeg": 93.31694301300129,
+          "latitudeDeg": -0.012177125394115083,
+          "speedDegPerDay": 1.2235782922839313,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 148.46900892541672,
+          "tropicalApparentLongitudeDeg": 172.2661144058077,
+          "latitudeDeg": 0.6408885000788069,
+          "speedDegPerDay": 0.5648892246887185,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 222.725806088243,
+          "tropicalApparentLongitudeDeg": 246.522911568634,
+          "latitudeDeg": 0.7026942528440764,
+          "speedDegPerDay": -0.07507827243157592,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 330.95266378168157,
+          "tropicalApparentLongitudeDeg": 354.74976926207256,
+          "latitudeDeg": -2.1382514374837873,
+          "speedDegPerDay": -0.0028050222031617135,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 188.01545217991952,
+          "tropicalApparentLongitudeDeg": 211.81255766031055,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.05299202545103444,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 188.94579528042684,
+          "tropicalApparentLongitudeDeg": 212.7429007608179,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.015597096030248392,
+          "returnedFlags": 65858
+        }
+      }
+    },
+    {
+      "id": "sample-40",
+      "utc": "1963-11-28T06:56:01Z",
+      "latitude": -0.3027,
+      "longitude": -7.3564,
+      "note": "Deterministic pseudo-random sample (LCG seed 0xc0ffee).",
+      "jdUt": 2438361.788900463,
+      "jdTt": 2438361.7893052427,
+      "ayanamshaMeanDeg": 23.35294429726946,
+      "ayanamshaTrueDeg": 23.34790081234361,
+      "ascendantSiderealDeg": 231.19955521316757,
+      "ramcDeg": 163.10654116107773,
+      "bodies": {
+        "Sun": {
+          "siderealLongitudeDeg": 221.96677526411708,
+          "tropicalApparentLongitudeDeg": 245.3146760764607,
+          "latitudeDeg": -0.00012029152433967883,
+          "speedDegPerDay": 1.012171085301562,
+          "returnedFlags": 65858
+        },
+        "Moon": {
+          "siderealLongitudeDeg": 3.6124092171816424,
+          "tropicalApparentLongitudeDeg": 26.960310029525246,
+          "latitudeDeg": -5.005482355640656,
+          "speedDegPerDay": 14.90414624161685,
+          "returnedFlags": 65858
+        },
+        "Mercury": {
+          "siderealLongitudeDeg": 234.81393224873446,
+          "tropicalApparentLongitudeDeg": 258.1618330610781,
+          "latitudeDeg": -2.0099018841145155,
+          "speedDegPerDay": 1.5148376014542044,
+          "returnedFlags": 65858
+        },
+        "Venus": {
+          "siderealLongitudeDeg": 244.97100567493268,
+          "tropicalApparentLongitudeDeg": 268.31890648727637,
+          "latitudeDeg": -1.125634391910884,
+          "speedDegPerDay": 1.2446864492100522,
+          "returnedFlags": 65858
+        },
+        "Mars": {
+          "siderealLongitudeDeg": 241.30625631518734,
+          "tropicalApparentLongitudeDeg": 264.65415712753094,
+          "latitudeDeg": -0.8552427378935628,
+          "speedDegPerDay": 0.7510211884105763,
+          "returnedFlags": 65858
+        },
+        "Jupiter": {
+          "siderealLongitudeDeg": 346.2777726923926,
+          "tropicalApparentLongitudeDeg": 9.625673504736211,
+          "latitudeDeg": -1.4758579925802913,
+          "speedDegPerDay": -0.024716919132211166,
+          "returnedFlags": 65858
+        },
+        "Saturn": {
+          "siderealLongitudeDeg": 294.28167868163877,
+          "tropicalApparentLongitudeDeg": 317.62957949398236,
+          "latitudeDeg": -1.2037748032664135,
+          "speedDegPerDay": 0.06118302851121535,
+          "returnedFlags": 65858
+        },
+        "MeanNode": {
+          "siderealLongitudeDeg": 79.79253927592397,
+          "tropicalApparentLongitudeDeg": 103.14044008826758,
+          "latitudeDeg": 2.417547070067897e-15,
+          "speedDegPerDay": -0.05299210560106289,
+          "returnedFlags": 65858
+        },
+        "TrueNode": {
+          "siderealLongitudeDeg": 78.39661953084583,
+          "tropicalApparentLongitudeDeg": 101.74452034318944,
+          "latitudeDeg": 0,
+          "speedDegPerDay": -0.09119086154646525,
+          "returnedFlags": 65858
+        }
+      }
+    }
+  ]
+}

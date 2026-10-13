@@ -1,0 +1,60 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# allow the documented example env file
+!.env.example
+
+# playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Swiss Ephemeris data files are licensed separately (AGPL / professional).
+# Download them locally with tools/reference/download-ephe.mjs; do not commit.
+/tools/reference/ephe/*.se1
+
+# Private research inputs (PRD, research drafts, audit package) stay on the local machine;
+# they are not part of the published source. The test fixture
+# tests/reference/fixtures/audit-avakahada-mapping.json is a copy of the audit's mapping table.
+/*.pdf
+/soulletter_audit_artifacts/

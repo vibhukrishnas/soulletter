@@ -1,0 +1,65 @@
+{
+  "generatedAt": "2026-10-12T19:30:43.303Z",
+  "method": "Signed difference (astronomy-engine provider − Swiss Ephemeris SWIEPH) of sidereal Lahiri longitudes at deterministic pseudo-random instants (LCG seed 0x5eed1e77); Ascendant at random latitudes |φ| ≤ 66°. Tolerance = ceil(max |Δ| × 1.5), minimum 1″.",
+  "productionEngine": "astronomy-engine 2.1.19",
+  "referenceEngine": "sweph 2.10.03",
+  "referenceEphemerisFiles": [
+    "sepl_18.se1",
+    "semo_18.se1"
+  ],
+  "referenceFallbackSamples": 0,
+  "samplesPerBand": 4000,
+  "bands": [
+    {
+      "id": "1800-1899",
+      "startYear": 1800,
+      "endYearExclusive": 1900,
+      "toleranceArcsec": {
+        "Sun": 4,
+        "Moon": 13,
+        "Mercury": 18,
+        "Venus": 35,
+        "Mars": 22,
+        "Jupiter": 16,
+        "Saturn": 20,
+        "MeanNode": 1,
+        "TrueNode": 27,
+        "Ascendant": 4
+      }
+    },
+    {
+      "id": "1900-2029",
+      "startYear": 1900,
+      "endYearExclusive": 2030,
+      "toleranceArcsec": {
+        "Sun": 4,
+        "Moon": 8,
+        "Mercury": 19,
+        "Venus": 31,
+        "Mars": 19,
+        "Jupiter": 16,
+        "Saturn": 20,
+        "MeanNode": 1,
+        "TrueNode": 26,
+        "Ascendant": 78
+      }
+    },
+    {
+      "id": "2030-2100",
+      "startYear": 2030,
+      "endYearExclusive": 2101,
+      "toleranceArcsec": {
+        "Sun": 10,
+        "Moon": 107,
+        "Mercury": 27,
+        "Venus": 23,
+        "Mars": 19,
+        "Jupiter": 15,
+        "Saturn": 14,
+        "MeanNode": 1,
+        "TrueNode": 36,
+        "Ascendant": 56
+      }
+    }
+  ]
+}

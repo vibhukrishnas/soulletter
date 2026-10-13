@@ -1,0 +1,389 @@
+{
+  "generatedAt": "2026-10-12T19:30:43.303Z",
+  "method": "Signed difference (astronomy-engine provider − Swiss Ephemeris SWIEPH) of sidereal Lahiri longitudes at deterministic pseudo-random instants (LCG seed 0x5eed1e77); Ascendant at random latitudes |φ| ≤ 66°. Tolerance = ceil(max |Δ| × 1.5), minimum 1″.",
+  "productionEngine": "astronomy-engine 2.1.19",
+  "referenceEngine": "sweph 2.10.03",
+  "referenceEphemerisFiles": [
+    "sepl_18.se1",
+    "semo_18.se1"
+  ],
+  "referenceFallbackSamples": 0,
+  "samplesPerBand": 4000,
+  "bands": {
+    "1800-1899": {
+      "samples": 4000,
+      "stats": {
+        "Sun": {
+          "unit": "arcseconds",
+          "max": 2.1983,
+          "p99": 1.6294,
+          "p50": 0.4008,
+          "worst": {
+            "utc": "1861-01-05T11:30:09.727Z",
+            "diffArcsec": 2.19833779401597
+          }
+        },
+        "Moon": {
+          "unit": "arcseconds",
+          "max": 8.3254,
+          "p99": 6.4133,
+          "p50": 3.1598,
+          "worst": {
+            "utc": "1806-02-04T04:50:35.058Z",
+            "diffArcsec": 8.325404397930924
+          }
+        },
+        "Mercury": {
+          "unit": "arcseconds",
+          "max": 11.7004,
+          "p99": 8.5446,
+          "p50": 1.8802,
+          "worst": {
+            "utc": "1836-10-27T03:37:40.207Z",
+            "diffArcsec": -11.700429225709286
+          }
+        },
+        "Venus": {
+          "unit": "arcseconds",
+          "max": 22.6942,
+          "p99": 10.5438,
+          "p50": 1.0652,
+          "worst": {
+            "utc": "1878-02-28T21:14:55.124Z",
+            "diffArcsec": 22.694176203594907
+          }
+        },
+        "Mars": {
+          "unit": "arcseconds",
+          "max": 14.2773,
+          "p99": 7.7032,
+          "p50": 0.9466,
+          "worst": {
+            "utc": "1830-09-17T11:10:22.326Z",
+            "diffArcsec": 14.277273738684926
+          }
+        },
+        "Jupiter": {
+          "unit": "arcseconds",
+          "max": 10.594,
+          "p99": 8.9621,
+          "p50": 2.0541,
+          "worst": {
+            "utc": "1808-10-13T01:34:45.015Z",
+            "diffArcsec": 10.594040778892122
+          }
+        },
+        "Saturn": {
+          "unit": "arcseconds",
+          "max": 12.7665,
+          "p99": 9.8405,
+          "p50": 3.5609,
+          "worst": {
+            "utc": "1822-11-15T21:29:02.154Z",
+            "diffArcsec": 12.766499776138573
+          }
+        },
+        "MeanNode": {
+          "unit": "arcseconds",
+          "max": 0.1552,
+          "p99": 0.1551,
+          "p50": 0.1353,
+          "worst": {
+            "utc": "1808-01-17T05:06:11.117Z",
+            "diffArcsec": -0.15515724027181932
+          }
+        },
+        "TrueNode": {
+          "unit": "arcseconds",
+          "max": 17.6897,
+          "p99": 13.3968,
+          "p50": 4.5651,
+          "worst": {
+            "utc": "1814-10-11T19:04:04.818Z",
+            "diffArcsec": 17.68967634318983
+          }
+        },
+        "Ayanamsha": {
+          "unit": "arcseconds",
+          "max": 0.0004,
+          "p99": 0.0004,
+          "p50": 0.0001,
+          "worst": {
+            "utc": "1800-01-15T23:55:33.120Z",
+            "diffArcsec": -0.0003874523102354033
+          }
+        },
+        "DeltaTSeconds": {
+          "unit": "seconds",
+          "max": 4.8673,
+          "p99": 4.7553,
+          "p50": 2.1968,
+          "worst": {
+            "utc": "1800-01-15T23:55:33.120Z",
+            "diffArcsec": -4.867268912494183
+          }
+        },
+        "Ascendant": {
+          "unit": "arcseconds",
+          "max": 2.3735,
+          "p99": 0.5764,
+          "p50": 0.037,
+          "worst": {
+            "utc": "1822-06-24T01:10:29.323Z",
+            "diffArcsec": -2.37350904508844
+          }
+        }
+      }
+    },
+    "1900-2029": {
+      "samples": 4000,
+      "stats": {
+        "Sun": {
+          "unit": "arcseconds",
+          "max": 2.1354,
+          "p99": 1.5903,
+          "p50": 0.4067,
+          "worst": {
+            "utc": "1962-09-27T08:38:04.890Z",
+            "diffArcsec": -2.1354036071556948
+          }
+        },
+        "Moon": {
+          "unit": "arcseconds",
+          "max": 5.1508,
+          "p99": 3.311,
+          "p50": 0.6377,
+          "worst": {
+            "utc": "2029-02-01T05:21:03.316Z",
+            "diffArcsec": 5.150846098854345
+          }
+        },
+        "Mercury": {
+          "unit": "arcseconds",
+          "max": 12.0241,
+          "p99": 7.7751,
+          "p50": 1.5918,
+          "worst": {
+            "utc": "1976-01-19T00:55:09.530Z",
+            "diffArcsec": 12.02405186274973
+          }
+        },
+        "Venus": {
+          "unit": "arcseconds",
+          "max": 20.3191,
+          "p99": 12.4072,
+          "p50": 1.0347,
+          "worst": {
+            "utc": "2026-10-20T05:20:23.006Z",
+            "diffArcsec": -20.319118651366352
+          }
+        },
+        "Mars": {
+          "unit": "arcseconds",
+          "max": 12.5023,
+          "p99": 7.4573,
+          "p50": 0.8921,
+          "worst": {
+            "utc": "1988-09-05T07:03:06.443Z",
+            "diffArcsec": 12.50233541372836
+          }
+        },
+        "Jupiter": {
+          "unit": "arcseconds",
+          "max": 10.1622,
+          "p99": 8.0154,
+          "p50": 2.5024,
+          "worst": {
+            "utc": "2008-08-11T22:15:20.453Z",
+            "diffArcsec": -10.162214486331322
+          }
+        },
+        "Saturn": {
+          "unit": "arcseconds",
+          "max": 12.8429,
+          "p99": 10.774,
+          "p50": 2.4936,
+          "worst": {
+            "utc": "2001-11-15T21:34:26.763Z",
+            "diffArcsec": 12.842895791860087
+          }
+        },
+        "MeanNode": {
+          "unit": "arcseconds",
+          "max": 0.106,
+          "p99": 0.1056,
+          "p50": 0.0582,
+          "worst": {
+            "utc": "1900-02-16T07:05:07.451Z",
+            "diffArcsec": -0.10598210780017325
+          }
+        },
+        "TrueNode": {
+          "unit": "arcseconds",
+          "max": 16.7026,
+          "p99": 12.3048,
+          "p50": 3.3479,
+          "worst": {
+            "utc": "2007-04-08T09:07:16.492Z",
+            "diffArcsec": -16.7026026446365
+          }
+        },
+        "Ayanamsha": {
+          "unit": "arcseconds",
+          "max": 0.0002,
+          "p99": 0.0002,
+          "p50": 0.0001,
+          "worst": {
+            "utc": "2029-12-28T00:11:53.101Z",
+            "diffArcsec": -0.00019777530013698197
+          }
+        },
+        "DeltaTSeconds": {
+          "unit": "seconds",
+          "max": 8.3095,
+          "p99": 7.7975,
+          "p50": 0.1161,
+          "worst": {
+            "utc": "2029-12-28T00:11:53.101Z",
+            "diffArcsec": 8.309472945984453
+          }
+        },
+        "Ascendant": {
+          "unit": "arcseconds",
+          "max": 51.9104,
+          "p99": 11.5207,
+          "p50": 0.0441,
+          "worst": {
+            "utc": "2017-08-24T11:02:24.709Z",
+            "diffArcsec": -51.91042752396697
+          }
+        }
+      }
+    },
+    "2030-2100": {
+      "samples": 4000,
+      "stats": {
+        "Sun": {
+          "unit": "arcseconds",
+          "max": 6.4446,
+          "p99": 5.0603,
+          "p50": 1.6128,
+          "worst": {
+            "utc": "2098-01-09T06:24:27.983Z",
+            "diffArcsec": 6.444598569078153
+          }
+        },
+        "Moon": {
+          "unit": "arcseconds",
+          "max": 70.6958,
+          "p99": 64.3832,
+          "p50": 23.9846,
+          "worst": {
+            "utc": "2099-09-15T04:47:14.424Z",
+            "diffArcsec": 70.69581198638843
+          }
+        },
+        "Mercury": {
+          "unit": "arcseconds",
+          "max": 17.3468,
+          "p99": 10.6746,
+          "p50": 2.6869,
+          "worst": {
+            "utc": "2091-11-17T02:07:48.438Z",
+            "diffArcsec": -17.34681224376118
+          }
+        },
+        "Venus": {
+          "unit": "arcseconds",
+          "max": 14.9309,
+          "p99": 11.2963,
+          "p50": 2.308,
+          "worst": {
+            "utc": "2082-09-23T22:06:42.716Z",
+            "diffArcsec": -14.930879049359191
+          }
+        },
+        "Mars": {
+          "unit": "arcseconds",
+          "max": 12.5787,
+          "p99": 9.5529,
+          "p50": 1.5702,
+          "worst": {
+            "utc": "2035-10-03T01:02:12.977Z",
+            "diffArcsec": 12.578724138143116
+          }
+        },
+        "Jupiter": {
+          "unit": "arcseconds",
+          "max": 9.7525,
+          "p99": 8.181,
+          "p50": 2.1487,
+          "worst": {
+            "utc": "2068-09-13T10:01:00.352Z",
+            "diffArcsec": -9.752503273125512
+          }
+        },
+        "Saturn": {
+          "unit": "arcseconds",
+          "max": 9.1771,
+          "p99": 8.6767,
+          "p50": 3.5104,
+          "worst": {
+            "utc": "2097-02-07T22:18:56.242Z",
+            "diffArcsec": 9.177141926079457
+          }
+        },
+        "MeanNode": {
+          "unit": "arcseconds",
+          "max": 0.1593,
+          "p99": 0.1577,
+          "p50": 0.058,
+          "worst": {
+            "utc": "2100-12-21T07:36:17.610Z",
+            "diffArcsec": -0.1592785251659734
+          }
+        },
+        "TrueNode": {
+          "unit": "arcseconds",
+          "max": 23.9617,
+          "p99": 17.1486,
+          "p50": 8.3147,
+          "worst": {
+            "utc": "2082-09-29T06:04:47.857Z",
+            "diffArcsec": -23.96169496503262
+          }
+        },
+        "Ayanamsha": {
+          "unit": "arcseconds",
+          "max": 0.0005,
+          "p99": 0.0005,
+          "p50": 0.0004,
+          "worst": {
+            "utc": "2100-12-21T07:36:17.610Z",
+            "diffArcsec": -0.0005248735334362209
+          }
+        },
+        "DeltaTSeconds": {
+          "unit": "seconds",
+          "max": 111.3061,
+          "p99": 110.2999,
+          "p50": 46.0034,
+          "worst": {
+            "utc": "2100-12-21T07:36:17.610Z",
+            "diffArcsec": 111.30614415742457
+          }
+        },
+        "Ascendant": {
+          "unit": "arcseconds",
+          "max": 36.71,
+          "p99": 12.0368,
+          "p50": 1.623,
+          "worst": {
+            "utc": "2033-07-19T07:35:03.808Z",
+            "diffArcsec": 36.709962164110266
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>SoulLetter</title>
+  <defs>
+    <linearGradient id="sl-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1352"/>
+      <stop offset="1" stop-color="#03051a"/>
+    </linearGradient>
+    <linearGradient id="sl-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7eed8"/>
+      <stop offset="1" stop-color="#d6b574"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#sl-bg)"/>
+  <g transform="scale(2)">
+    <circle cx="16" cy="16" r="12.5" fill="none" stroke="#e5cc92" stroke-opacity="0.55" stroke-width="1.1"/>
+    <path fill="url(#sl-gold)" d="M16 5.5c.6 6 3.9 9.4 10.5 10.5-6.6 1.1-9.9 4.4-10.5 10.5-.6-6.1-3.9-9.4-10.5-10.5C12.1 14.9 15.4 11.5 16 5.5z"/>
+    <circle cx="24.85" cy="7.15" r="1.7" fill="#e5cc92"/>
+  </g>
+</svg>

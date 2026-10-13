@@ -167,7 +167,7 @@ Ephemeris is a dev-only reference tool unless an operator explicitly declares a 
 
 ## Research inputs
 
-The original research PDFs and the audit package (`soulletter_audit_artifacts/`) are kept unchanged
-in the repository root for provenance.
-#   s o u l l e t t e r  
- 
+The product requirements, research drafts and the audit package that shaped this implementation are
+private working documents and are not published here. The audit's provisional Avakahada mapping is
+included as a test fixture (`tests/reference/fixtures/audit-avakahada-mapping.json`) so the syllable
+table can be checked against it cell by cell.

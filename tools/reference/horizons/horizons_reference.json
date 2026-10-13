@@ -1,0 +1,530 @@
+{
+  "metadata": {
+    "queriedAt": "2026-10-13",
+    "apiUrl": "https://ssd.jpl.nasa.gov/api/horizons.api",
+    "apiDocUrl": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+    "apiVersion": "1.2",
+    "apiSignature": {
+      "version": "1.2",
+      "source": "NASA/JPL Horizons API"
+    },
+    "apiVersionNote": "The response signature reports version 1.2, but the API documentation page header reads \"Version: 1.3 (2025 June)\" (changelog for 1.3: \"Update to mention TIME_TYPE setting\").",
+    "quantity": 31,
+    "quantityLabels": [
+      "ObsEcLon",
+      "ObsEcLat"
+    ],
+    "frameDescription": "Observer-centered IAU76/80 ecliptic-of-date longitude and latitude of the target centers' apparent position with light-time, gravitational deflection of light, stellar aberration, and optional atmospheric refraction correction.  For non-Earth sites, the Earth ecliptic at reference-frame standard epoch is used (J2000 or B1950).",
+    "frameDescriptionSource": "https://ssd.jpl.nasa.gov/horizons/manual.html#observer-ecliptic-longitude--latitude (Horizons manual, observer quantity 31)",
+    "frameDescriptionInResponse": "Observer-centered IAU76/80 ecliptic-of-date longitude and latitude of the target centers' apparent position, with light-time, gravitational deflection of light, and stellar aberrations.  Units: DEGREES",
+    "eclipticOfDateDefinition": "Used for some observer table quantities, this dynamic frame uses the IAU76/80 time-varying Earth obliquity model to construct the ecliptic x-y plane of-date over modern eras and the long-term IAU76/80-compatible model of Owen, a long-term integration of Kinoshita’s polar equations of motion, for times more than 200 years from the year 2000. (https://ssd.jpl.nasa.gov/horizons/manual.html#ecliptic-of-date)",
+    "equinoxOfDate": "TRUE equinox of date (nutation in longitude included). The documentation does not say mean or true explicitly; this was determined empirically, see frameCheck.",
+    "frameCheck": {
+      "method": "Queried quantities 2 (apparent RA/DEC with respect to the Earth true equator and equinox of date, compensated for \"precession & nutation\") and 31 together for Sun, Moon and Venus at the same 5 instants. Rotated q2 into ecliptic coordinates about the true equinox using the true obliquity (IAU1976 mean obliquity + IAU1980 nutation in obliquity, 40-term series) and compared the result with q31.",
+      "result": "q31 matches the true-equinox, true-obliquity transform of q2 to <=0.0015 arcsec in longitude and <=0.009 arcsec in latitude for all 15 rows. A mean-equinox reading would differ by -dpsi (about -13.7, -13.3 and +13.9 arcsec on 1975-12-31, 1990-10-15 and 2000-01-01). A mean-obliquity transform leaves latitude residuals up to 8.7 arcsec. Conclusion: ObsEcLon/ObsEcLat is the geocentric apparent position referred to the ecliptic of date and the TRUE equinox of date (the standard \"apparent longitude\").",
+      "implicationForSidereal": "Subtract a nutation-inclusive (true) ayanamsa from these longitudes, or compare mean-equinox longitudes against a mean ayanamsa.",
+      "rawFiles": [
+        "framecheck_sun_10_q2_q31.txt",
+        "framecheck_moon_301_q2_q31.txt",
+        "framecheck_venus_299_q2_q31.txt"
+      ],
+      "independentCheck": {
+        "source": "IMCCE - Observatoire de Paris, https://ftp.imcce.fr/pub/ephem/sun/seasons/ (files 1950-99 and 2000-49; README: \"Solstices and Equinoxes between 1900 and 2999 in dynamical time.\" and \"The apparent geocentric longitude of the Sun is equal to 0 degree for the Spring equinox and equal to 180 degrees for the Automn equinox.\" Computed with a truncated VSOP87.)",
+        "method": "Queried Horizons q31 for the Sun at the IMCCE event times (TIME_TYPE=TT). The IMCCE times are rounded to 1 minute, which allows about +/-1.3 arcsec. A mean-equinox q31 would be off by -dpsi, i.e. about -13.5, -13.6, +14.7 and +16.8 arcsec at the 1975, 1990, 2000-03 and 2000-12 events (IAU1980 nutation). The 2025 event does not discriminate (dpsi is about +0.7 arcsec).",
+        "rawFile": "crosscheck_sun_10_q31_at_imcce_seasons_TT.txt",
+        "rows": [
+          {
+            "imcceInstant": "1975-12-22 11:46 TT",
+            "event": "winter solstice",
+            "expectedApparentLonDeg": 270,
+            "horizonsJdTT": 2442768.990277778,
+            "horizonsObsEcLonDeg": 269.99976,
+            "differenceArcsec": -0.86
+          },
+          {
+            "imcceInstant": "1990-09-23 06:56 TT",
+            "event": "autumn equinox",
+            "expectedApparentLonDeg": 180,
+            "horizonsJdTT": 2448157.788888889,
+            "horizonsObsEcLonDeg": 179.9996813,
+            "differenceArcsec": -1.15
+          },
+          {
+            "imcceInstant": "2000-03-20 07:36 TT",
+            "event": "spring equinox",
+            "expectedApparentLonDeg": 0,
+            "horizonsJdTT": 2451623.816666667,
+            "horizonsObsEcLonDeg": 359.9997735,
+            "differenceArcsec": -0.82
+          },
+          {
+            "imcceInstant": "2000-12-21 13:39 TT",
+            "event": "winter solstice",
+            "expectedApparentLonDeg": 270,
+            "horizonsJdTT": 2451900.06875,
+            "horizonsObsEcLonDeg": 270.0003443,
+            "differenceArcsec": 1.24
+          },
+          {
+            "imcceInstant": "2025-03-20 09:03 TT",
+            "event": "spring equinox",
+            "expectedApparentLonDeg": 0,
+            "horizonsJdTT": 2460754.877083333,
+            "horizonsObsEcLonDeg": 0.0002387,
+            "differenceArcsec": 0.86
+          }
+        ],
+        "result": "All differences are within the +/-1.3 arcsec rounding window, which is consistent with q31 being the apparent longitude referred to the true equinox of date."
+      }
+    },
+    "centerCode": "500@399",
+    "centerSiteName": "GEOCENTRIC",
+    "ephemType": "OBSERVER",
+    "requestParameters": {
+      "TLIST_TYPE": "CAL",
+      "TIME_TYPE": "UT",
+      "QUANTITIES": "31",
+      "ANG_FORMAT": "DEG",
+      "EXTRA_PREC": "YES",
+      "CSV_FORMAT": "YES",
+      "CAL_FORMAT": "BOTH",
+      "TIME_DIGITS": "FRACSEC",
+      "OBJ_DATA": "NO",
+      "MAKE_EPHEM": "YES",
+      "REF_SYSTEM": "ICRF (default, not sent)",
+      "APPARENT": "AIRLESS (default, not sent)"
+    },
+    "timeScaleNote": "Horizons response: \"Times PRIOR to 1962 are UT1 ... Times AFTER 1962 are in UTC\". The 1950-06-15 instant is therefore UT1. All other instants are UTC.",
+    "eopFile": "eop.261009.p270105",
+    "outputPrecisionDeg": 1e-7,
+    "targets": [
+      {
+        "body": "Sun",
+        "horizonsId": 10,
+        "targetBodyName": "Sun (10)                        {source: DE441}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:17 2026",
+        "rawTextFile": "sun_10.txt",
+        "rawJsonFile": "sun_10.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Moon",
+        "horizonsId": 301,
+        "targetBodyName": "Moon (301)                      {source: DE441}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:20 2026",
+        "rawTextFile": "moon_301.txt",
+        "rawJsonFile": "moon_301.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Mercury",
+        "horizonsId": 199,
+        "targetBodyName": "Mercury (199)                   {source: DE441}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:23 2026",
+        "rawTextFile": "mercury_199.txt",
+        "rawJsonFile": "mercury_199.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27199%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27199%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Venus",
+        "horizonsId": 299,
+        "targetBodyName": "Venus (299)                     {source: DE441}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:26 2026",
+        "rawTextFile": "venus_299.txt",
+        "rawJsonFile": "venus_299.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27299%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27299%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Mars",
+        "horizonsId": 499,
+        "targetBodyName": "Mars (499)                      {source: mar099}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:29 2026",
+        "rawTextFile": "mars_499.txt",
+        "rawJsonFile": "mars_499.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Jupiter",
+        "horizonsId": 599,
+        "targetBodyName": "Jupiter (599)                   {source: jup365_merged}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:33 2026",
+        "rawTextFile": "jupiter_599.txt",
+        "rawJsonFile": "jupiter_599.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27599%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27599%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      },
+      {
+        "body": "Saturn",
+        "horizonsId": 699,
+        "targetBodyName": "Saturn (699)                    {source: sat441l}",
+        "centerBodyName": "Earth (399)                     {source: DE441}",
+        "centerSiteName": "GEOCENTRIC",
+        "serverTimestampPasadena": "Mon Oct 12 12:23:36 2026",
+        "rawTextFile": "saturn_699.txt",
+        "rawJsonFile": "saturn_699.json",
+        "textQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%27699%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27",
+        "jsonQueryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27699%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27500@399%27&TLIST=%271950-06-15%2000:00:00%27%20%271975-12-31%2018:45:00%27%20%271990-10-15%2009:00:00%27%20%272000-01-01%2012:00:00%27%20%272025-03-20%2006:30:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%2731%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+      }
+    ],
+    "caveats": [
+      "Horizons IDs 599 and 699 are the planet centers of Jupiter and Saturn, not the system barycenters 5 and 6.",
+      "Values are geocentric (CENTER 500@399), with no topocentric parallax. For the Moon, the topocentric position can differ by up to about 1 degree."
+    ]
+  },
+  "positions": [
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Sun",
+      "horizonsId": 10,
+      "eclipticLongitudeDeg": 83.3320656,
+      "eclipticLatitudeDeg": 0.0002076,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Sun",
+      "horizonsId": 10,
+      "eclipticLongitudeDeg": 279.4682676,
+      "eclipticLatitudeDeg": 0.000165,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Sun",
+      "horizonsId": 10,
+      "eclipticLongitudeDeg": 201.7503919,
+      "eclipticLatitudeDeg": -0.0001414,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Sun",
+      "horizonsId": 10,
+      "eclipticLongitudeDeg": 280.3689092,
+      "eclipticLatitudeDeg": 0.0002381,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Sun",
+      "horizonsId": 10,
+      "eclipticLongitudeDeg": 359.8954713,
+      "eclipticLatitudeDeg": -0.0001993,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Moon",
+      "horizonsId": 301,
+      "eclipticLongitudeDeg": 75.9445371,
+      "eclipticLatitudeDeg": 4.7595704,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Moon",
+      "horizonsId": 301,
+      "eclipticLongitudeDeg": 269.1411716,
+      "eclipticLatitudeDeg": 3.1785478,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Moon",
+      "horizonsId": 301,
+      "eclipticLongitudeDeg": 163.8468379,
+      "eclipticLatitudeDeg": -3.2088722,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Moon",
+      "horizonsId": 301,
+      "eclipticLongitudeDeg": 223.323786,
+      "eclipticLatitudeDeg": 5.1707422,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Moon",
+      "horizonsId": 301,
+      "eclipticLongitudeDeg": 245.0939954,
+      "eclipticLatitudeDeg": -4.8982542,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Mercury",
+      "horizonsId": 199,
+      "eclipticLongitudeDeg": 60.4779394,
+      "eclipticLatitudeDeg": -2.999215,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Mercury",
+      "horizonsId": 199,
+      "eclipticLongitudeDeg": 297.1420628,
+      "eclipticLatitudeDeg": -1.8336156,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Mercury",
+      "horizonsId": 199,
+      "eclipticLongitudeDeg": 196.8989522,
+      "eclipticLatitudeDeg": 1.3875956,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Mercury",
+      "horizonsId": 199,
+      "eclipticLongitudeDeg": 271.8892699,
+      "eclipticLatitudeDeg": -0.994819,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Mercury",
+      "horizonsId": 199,
+      "eclipticLongitudeDeg": 7.9559007,
+      "eclipticLatitudeDeg": 3.5321524,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Venus",
+      "horizonsId": 299,
+      "eclipticLongitudeDeg": 45.459865,
+      "eclipticLatitudeDeg": -2.1008666,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Venus",
+      "horizonsId": 299,
+      "eclipticLongitudeDeg": 239.1258514,
+      "eclipticLatitudeDeg": 2.2175902,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Venus",
+      "horizonsId": 299,
+      "eclipticLongitudeDeg": 197.3182034,
+      "eclipticLatitudeDeg": 1.3007568,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Venus",
+      "horizonsId": 299,
+      "eclipticLongitudeDeg": 241.5657794,
+      "eclipticLatitudeDeg": 2.0663548,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Venus",
+      "horizonsId": 299,
+      "eclipticLongitudeDeg": 4.3892363,
+      "eclipticLatitudeDeg": 8.5434246,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Mars",
+      "horizonsId": 499,
+      "eclipticLongitudeDeg": 181.180772,
+      "eclipticLatitudeDeg": 0.3858676,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Mars",
+      "horizonsId": 499,
+      "eclipticLongitudeDeg": 77.4295018,
+      "eclipticLatitudeDeg": 3.1274173,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Mars",
+      "horizonsId": 499,
+      "eclipticLongitudeDeg": 74.3495021,
+      "eclipticLatitudeDeg": -0.6219256,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Mars",
+      "horizonsId": 499,
+      "eclipticLongitudeDeg": 327.9632921,
+      "eclipticLatitudeDeg": -1.0677752,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Mars",
+      "horizonsId": 499,
+      "eclipticLongitudeDeg": 110.2237359,
+      "eclipticLatitudeDeg": 2.976786,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Jupiter",
+      "horizonsId": 599,
+      "eclipticLongitudeDeg": 337.2213472,
+      "eclipticLatitudeDeg": -1.0172868,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Jupiter",
+      "horizonsId": 599,
+      "eclipticLongitudeDeg": 15.5188309,
+      "eclipticLatitudeDeg": -1.3034854,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Jupiter",
+      "horizonsId": 599,
+      "eclipticLongitudeDeg": 130.3990487,
+      "eclipticLatitudeDeg": 0.4201144,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Jupiter",
+      "horizonsId": 599,
+      "eclipticLongitudeDeg": 25.2530685,
+      "eclipticLatitudeDeg": -1.2621868,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Jupiter",
+      "horizonsId": 599,
+      "eclipticLongitudeDeg": 74.3047628,
+      "eclipticLatitudeDeg": -0.3387895,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1950-06-15T00:00:00.000Z",
+      "jdUt": 2433447.5,
+      "body": "Saturn",
+      "horizonsId": 699,
+      "eclipticLongitudeDeg": 163.3776879,
+      "eclipticLatitudeDeg": 2.0437883,
+      "horizonsTimeScale": "UT1"
+    },
+    {
+      "utc": "1975-12-31T18:45:00.000Z",
+      "jdUt": 2442778.28125,
+      "body": "Saturn",
+      "horizonsId": 699,
+      "eclipticLongitudeDeg": 121.0760222,
+      "eclipticLatitudeDeg": 0.2561378,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "1990-10-15T09:00:00.000Z",
+      "jdUt": 2448179.875,
+      "body": "Saturn",
+      "horizonsId": 699,
+      "eclipticLongitudeDeg": 289.1086587,
+      "eclipticLatitudeDeg": -0.0542526,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2000-01-01T12:00:00.000Z",
+      "jdUt": 2451545,
+      "body": "Saturn",
+      "horizonsId": 699,
+      "eclipticLongitudeDeg": 40.3956366,
+      "eclipticLatitudeDeg": -2.4448533,
+      "horizonsTimeScale": "UTC"
+    },
+    {
+      "utc": "2025-03-20T06:30:00.000Z",
+      "jdUt": 2460754.770833333,
+      "body": "Saturn",
+      "horizonsId": 699,
+      "eclipticLongitudeDeg": 353.0621195,
+      "eclipticLatitudeDeg": -1.921442,
+      "horizonsTimeScale": "UTC"
+    }
+  ],
+  "localApparentSiderealTime": {
+    "quantity": 7,
+    "label": "L_Ap_Sid_Time",
+    "utc": "1990-10-15T09:00:00.000Z",
+    "jdUt": 2448179.875,
+    "site": {
+      "name": "New Delhi (user-defined site)",
+      "centerCode": "coord@399",
+      "coordType": "GEODETIC",
+      "siteCoord": "77.2090,28.6139,0",
+      "eastLongitudeDeg": 77.209,
+      "latitudeDeg": 28.6139,
+      "altitudeKm": 0
+    },
+    "lastHours": 15.7230383943,
+    "lastHms": "15h 43m 22.9382s",
+    "lastDeg": 235.8455759145,
+    "definition": "The angle measured westward in the body true-equator of-date plane from the meridian containing the body-fixed observer to the meridian containing the true Earth equinox (defined by intersection of the true equator of date with the ecliptic of date).  TOPOCENTRIC ONLY. (https://ssd.jpl.nasa.gov/horizons/manual.html#local-apparent-sidereal-time)",
+    "crossCheck": "An independent recomputation with IAU1982 GMST plus the equation of equinoxes, using UT1-UTC = -0.2128 s interpolated from IERS 20 C04 for 1990-10-15 09:00 UTC, gives 15.7230355828 h. Horizons is 10 ms of sidereal time later than that. Assuming UT1 = UTC instead gives 15.7230958764 h, a 207 ms difference, which shows that Horizons applies UT1-UTC from its EOP file.",
+    "rawFile": "newdelhi_topo_q7_1990-10-15T0900UT.txt",
+    "queryUrl": "https://ssd.jpl.nasa.gov/api/horizons.api?format=text&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord@399%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2777.2090,28.6139,0%27&TLIST=%271990-10-15%2009:00:00%27&TLIST_TYPE=%27CAL%27&TIME_TYPE=%27UT%27&QUANTITIES=%277%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&CSV_FORMAT=%27YES%27&CAL_FORMAT=%27BOTH%27&TIME_DIGITS=%27FRACSEC%27"
+  }
+}

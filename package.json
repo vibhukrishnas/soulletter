@@ -1,0 +1,50 @@
+{
+  "name": "soulletter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:reference": "vitest run src/server/ephemeris tests/reference",
+    "test:e2e": "playwright test",
+    "reference:fixtures": "tsx tools/reference/generate-swiss-fixtures.ts",
+    "reference:tolerances": "tsx tools/reference/measure-engine-agreement.ts",
+    "verify": "npm run lint && npm run typecheck && npm run test"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "astronomy-engine": "2.1.19",
+    "framer-motion": "13.4.6",
+    "zod": "4.6.5",
+    "react-hook-form": "7.89.0",
+    "@hookform/resolvers": "5.9.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "24.19.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "4.1.11",
+    "@playwright/test": "1.63.0",
+    "tsx": "4.23.15",
+    "sweph": "2.10.3-8",
+    "vite": "7.3.6"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "overrides": {
+    "vite": "7.3.6"
+  }
+}

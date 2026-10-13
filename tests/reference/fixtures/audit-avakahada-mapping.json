@@ -1,0 +1,1373 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-10-13",
+  "title": "Avakahada-style Nakshatra-Pada naming syllable table (provisional transcription)",
+  "purpose": "Reference data for a native naming-syllable lookup only. It is NOT a verified rule for deriving a future partner's initial.",
+  "status": "PROVISIONAL_NOT_PRODUCTION_APPROVED",
+  "sourceAssessment": {
+    "primaryClassicalSourceVerified": false,
+    "secondarySourcesCrossChecked": true,
+    "notes": [
+      "The 27x4 Roman syllable table is transcribed from a modern secondary table and cross-checked where available against another modern panchang/naming table.",
+      "No primary classical textual passage was verified that establishes this exact Romanized table as the sole canonical form across traditions.",
+      "Published modern tables disagree on some rows. Shravana is a material example: this file uses Khi/Khu/Khe/Kho from source A, while source C lists Ju/Je/Jo/Gha. Treat the table as a named configurable variant, not universal truth.",
+      "Roman spellings are transcription conventions, not phonetic equivalence guarantees across Indic languages/scripts.",
+      "Do not auto-replace rare syllables; return the selected table entry and disclose variant/phonetic limitations.",
+      "Other regional/common-table differences are also reported (for example, Uttara Bhadrapada Pada 4 is rendered as Nya in source A / uploaded draft but as Tra in Nitya Deepam; Ardra Pada 3 is romanized variously as Nga, Ng, Ing or Na). Preserve a selected table version and do not merge variants silently."
+    ]
+  },
+  "selectedVariant": "modern-secondary-table-astrologyhindi-v1",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "secondary_practitioner_reference",
+      "url": "https://astrologyhindi.in/en/articles/baby-names-by-nakshatra/",
+      "supports": "Full modern 27-Nakshatra, 4-syllable table including Khi/Khu/Khe/Kho for Shravana. Not a primary classical text."
+    },
+    {
+      "id": "S2",
+      "type": "secondary_practitioner_reference",
+      "url": "https://www.nityadeepam.com/en/tools/baby-names/",
+      "supports": "Cross-check of many conventional nakshatra-pada syllables; modern naming reference."
+    },
+    {
+      "id": "S3",
+      "type": "secondary_practitioner_reference",
+      "url": "https://www.livepanditji.com/baby-names/shravana/",
+      "supports": "Documents an alternative Shravana table Ju/Je/Jo/Gha, demonstrating table variation."
+    }
+  ],
+  "rules": {
+    "nakshatraWidthDegrees": 13.333333333333334,
+    "padaWidthDegrees": 3.3333333333333335,
+    "nakshatraCount": 27,
+    "padasPerNakshatra": 4,
+    "mappingMayGenerateFuturePartnerInitial": false,
+    "approvedForProduction": false
+  },
+  "nakshatras": [
+    {
+      "indexZeroBased": 0,
+      "indexOneBased": 1,
+      "name": "Ashwini",
+      "startSiderealLongitudeDegInclusive": 0.0,
+      "endSiderealLongitudeDegExclusive": 13.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 0.0,
+          "endSiderealLongitudeDegExclusive": 3.3333333333,
+          "syllableRoman": "Chu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 3.3333333333,
+          "endSiderealLongitudeDegExclusive": 6.6666666667,
+          "syllableRoman": "Che",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 6.6666666667,
+          "endSiderealLongitudeDegExclusive": 10.0,
+          "syllableRoman": "Cho",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 10.0,
+          "endSiderealLongitudeDegExclusive": 13.3333333333,
+          "syllableRoman": "La",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 1,
+      "indexOneBased": 2,
+      "name": "Bharani",
+      "startSiderealLongitudeDegInclusive": 13.3333333333,
+      "endSiderealLongitudeDegExclusive": 26.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 13.3333333333,
+          "endSiderealLongitudeDegExclusive": 16.6666666667,
+          "syllableRoman": "Li",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 16.6666666667,
+          "endSiderealLongitudeDegExclusive": 20.0,
+          "syllableRoman": "Lu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 20.0,
+          "endSiderealLongitudeDegExclusive": 23.3333333333,
+          "syllableRoman": "Le",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 23.3333333333,
+          "endSiderealLongitudeDegExclusive": 26.6666666667,
+          "syllableRoman": "Lo",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 2,
+      "indexOneBased": 3,
+      "name": "Krittika",
+      "startSiderealLongitudeDegInclusive": 26.6666666667,
+      "endSiderealLongitudeDegExclusive": 40.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 26.6666666667,
+          "endSiderealLongitudeDegExclusive": 30.0,
+          "syllableRoman": "A",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 30.0,
+          "endSiderealLongitudeDegExclusive": 33.3333333333,
+          "syllableRoman": "I",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 33.3333333333,
+          "endSiderealLongitudeDegExclusive": 36.6666666667,
+          "syllableRoman": "U",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 36.6666666667,
+          "endSiderealLongitudeDegExclusive": 40.0,
+          "syllableRoman": "E",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 3,
+      "indexOneBased": 4,
+      "name": "Rohini",
+      "startSiderealLongitudeDegInclusive": 40.0,
+      "endSiderealLongitudeDegExclusive": 53.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 40.0,
+          "endSiderealLongitudeDegExclusive": 43.3333333333,
+          "syllableRoman": "O",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 43.3333333333,
+          "endSiderealLongitudeDegExclusive": 46.6666666667,
+          "syllableRoman": "Va",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 46.6666666667,
+          "endSiderealLongitudeDegExclusive": 50.0,
+          "syllableRoman": "Vi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 50.0,
+          "endSiderealLongitudeDegExclusive": 53.3333333333,
+          "syllableRoman": "Vu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 4,
+      "indexOneBased": 5,
+      "name": "Mrigashira",
+      "startSiderealLongitudeDegInclusive": 53.3333333333,
+      "endSiderealLongitudeDegExclusive": 66.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 53.3333333333,
+          "endSiderealLongitudeDegExclusive": 56.6666666667,
+          "syllableRoman": "Ve",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 56.6666666667,
+          "endSiderealLongitudeDegExclusive": 60.0,
+          "syllableRoman": "Vo",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 60.0,
+          "endSiderealLongitudeDegExclusive": 63.3333333333,
+          "syllableRoman": "Ka",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 63.3333333333,
+          "endSiderealLongitudeDegExclusive": 66.6666666667,
+          "syllableRoman": "Ki",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 5,
+      "indexOneBased": 6,
+      "name": "Ardra",
+      "startSiderealLongitudeDegInclusive": 66.6666666667,
+      "endSiderealLongitudeDegExclusive": 80.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 66.6666666667,
+          "endSiderealLongitudeDegExclusive": 70.0,
+          "syllableRoman": "Ku",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 70.0,
+          "endSiderealLongitudeDegExclusive": 73.3333333333,
+          "syllableRoman": "Gha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 73.3333333333,
+          "endSiderealLongitudeDegExclusive": 76.6666666667,
+          "syllableRoman": "Nga",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 76.6666666667,
+          "endSiderealLongitudeDegExclusive": 80.0,
+          "syllableRoman": "Chha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 6,
+      "indexOneBased": 7,
+      "name": "Punarvasu",
+      "startSiderealLongitudeDegInclusive": 80.0,
+      "endSiderealLongitudeDegExclusive": 93.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 80.0,
+          "endSiderealLongitudeDegExclusive": 83.3333333333,
+          "syllableRoman": "Ke",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 83.3333333333,
+          "endSiderealLongitudeDegExclusive": 86.6666666667,
+          "syllableRoman": "Ko",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 86.6666666667,
+          "endSiderealLongitudeDegExclusive": 90.0,
+          "syllableRoman": "Ha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 90.0,
+          "endSiderealLongitudeDegExclusive": 93.3333333333,
+          "syllableRoman": "Hi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 7,
+      "indexOneBased": 8,
+      "name": "Pushya",
+      "startSiderealLongitudeDegInclusive": 93.3333333333,
+      "endSiderealLongitudeDegExclusive": 106.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 93.3333333333,
+          "endSiderealLongitudeDegExclusive": 96.6666666667,
+          "syllableRoman": "Hu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 96.6666666667,
+          "endSiderealLongitudeDegExclusive": 100.0,
+          "syllableRoman": "He",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 100.0,
+          "endSiderealLongitudeDegExclusive": 103.3333333333,
+          "syllableRoman": "Ho",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 103.3333333333,
+          "endSiderealLongitudeDegExclusive": 106.6666666667,
+          "syllableRoman": "Da",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 8,
+      "indexOneBased": 9,
+      "name": "Ashlesha",
+      "startSiderealLongitudeDegInclusive": 106.6666666667,
+      "endSiderealLongitudeDegExclusive": 120.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 106.6666666667,
+          "endSiderealLongitudeDegExclusive": 110.0,
+          "syllableRoman": "Di",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 110.0,
+          "endSiderealLongitudeDegExclusive": 113.3333333333,
+          "syllableRoman": "Du",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 113.3333333333,
+          "endSiderealLongitudeDegExclusive": 116.6666666667,
+          "syllableRoman": "De",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 116.6666666667,
+          "endSiderealLongitudeDegExclusive": 120.0,
+          "syllableRoman": "Do",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 9,
+      "indexOneBased": 10,
+      "name": "Magha",
+      "startSiderealLongitudeDegInclusive": 120.0,
+      "endSiderealLongitudeDegExclusive": 133.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 120.0,
+          "endSiderealLongitudeDegExclusive": 123.3333333333,
+          "syllableRoman": "Ma",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 123.3333333333,
+          "endSiderealLongitudeDegExclusive": 126.6666666667,
+          "syllableRoman": "Mi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 126.6666666667,
+          "endSiderealLongitudeDegExclusive": 130.0,
+          "syllableRoman": "Mu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 130.0,
+          "endSiderealLongitudeDegExclusive": 133.3333333333,
+          "syllableRoman": "Me",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 10,
+      "indexOneBased": 11,
+      "name": "Purva Phalguni",
+      "startSiderealLongitudeDegInclusive": 133.3333333333,
+      "endSiderealLongitudeDegExclusive": 146.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 133.3333333333,
+          "endSiderealLongitudeDegExclusive": 136.6666666667,
+          "syllableRoman": "Mo",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 136.6666666667,
+          "endSiderealLongitudeDegExclusive": 140.0,
+          "syllableRoman": "Ta",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 140.0,
+          "endSiderealLongitudeDegExclusive": 143.3333333333,
+          "syllableRoman": "Ti",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 143.3333333333,
+          "endSiderealLongitudeDegExclusive": 146.6666666667,
+          "syllableRoman": "Tu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 11,
+      "indexOneBased": 12,
+      "name": "Uttara Phalguni",
+      "startSiderealLongitudeDegInclusive": 146.6666666667,
+      "endSiderealLongitudeDegExclusive": 160.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 146.6666666667,
+          "endSiderealLongitudeDegExclusive": 150.0,
+          "syllableRoman": "Te",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 150.0,
+          "endSiderealLongitudeDegExclusive": 153.3333333333,
+          "syllableRoman": "To",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 153.3333333333,
+          "endSiderealLongitudeDegExclusive": 156.6666666667,
+          "syllableRoman": "Pa",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 156.6666666667,
+          "endSiderealLongitudeDegExclusive": 160.0,
+          "syllableRoman": "Pi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 12,
+      "indexOneBased": 13,
+      "name": "Hasta",
+      "startSiderealLongitudeDegInclusive": 160.0,
+      "endSiderealLongitudeDegExclusive": 173.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 160.0,
+          "endSiderealLongitudeDegExclusive": 163.3333333333,
+          "syllableRoman": "Pu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 163.3333333333,
+          "endSiderealLongitudeDegExclusive": 166.6666666667,
+          "syllableRoman": "Sha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 166.6666666667,
+          "endSiderealLongitudeDegExclusive": 170.0,
+          "syllableRoman": "Na",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 170.0,
+          "endSiderealLongitudeDegExclusive": 173.3333333333,
+          "syllableRoman": "Tha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 13,
+      "indexOneBased": 14,
+      "name": "Chitra",
+      "startSiderealLongitudeDegInclusive": 173.3333333333,
+      "endSiderealLongitudeDegExclusive": 186.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 173.3333333333,
+          "endSiderealLongitudeDegExclusive": 176.6666666667,
+          "syllableRoman": "Pe",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 176.6666666667,
+          "endSiderealLongitudeDegExclusive": 180.0,
+          "syllableRoman": "Po",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 180.0,
+          "endSiderealLongitudeDegExclusive": 183.3333333333,
+          "syllableRoman": "Ra",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 183.3333333333,
+          "endSiderealLongitudeDegExclusive": 186.6666666667,
+          "syllableRoman": "Ri",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 14,
+      "indexOneBased": 15,
+      "name": "Swati",
+      "startSiderealLongitudeDegInclusive": 186.6666666667,
+      "endSiderealLongitudeDegExclusive": 200.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 186.6666666667,
+          "endSiderealLongitudeDegExclusive": 190.0,
+          "syllableRoman": "Ru",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 190.0,
+          "endSiderealLongitudeDegExclusive": 193.3333333333,
+          "syllableRoman": "Re",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 193.3333333333,
+          "endSiderealLongitudeDegExclusive": 196.6666666667,
+          "syllableRoman": "Ro",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 196.6666666667,
+          "endSiderealLongitudeDegExclusive": 200.0,
+          "syllableRoman": "Ta",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 15,
+      "indexOneBased": 16,
+      "name": "Vishakha",
+      "startSiderealLongitudeDegInclusive": 200.0,
+      "endSiderealLongitudeDegExclusive": 213.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 200.0,
+          "endSiderealLongitudeDegExclusive": 203.3333333333,
+          "syllableRoman": "Ti",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 203.3333333333,
+          "endSiderealLongitudeDegExclusive": 206.6666666667,
+          "syllableRoman": "Tu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 206.6666666667,
+          "endSiderealLongitudeDegExclusive": 210.0,
+          "syllableRoman": "Te",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 210.0,
+          "endSiderealLongitudeDegExclusive": 213.3333333333,
+          "syllableRoman": "To",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 16,
+      "indexOneBased": 17,
+      "name": "Anuradha",
+      "startSiderealLongitudeDegInclusive": 213.3333333333,
+      "endSiderealLongitudeDegExclusive": 226.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 213.3333333333,
+          "endSiderealLongitudeDegExclusive": 216.6666666667,
+          "syllableRoman": "Na",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 216.6666666667,
+          "endSiderealLongitudeDegExclusive": 220.0,
+          "syllableRoman": "Ni",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 220.0,
+          "endSiderealLongitudeDegExclusive": 223.3333333333,
+          "syllableRoman": "Nu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 223.3333333333,
+          "endSiderealLongitudeDegExclusive": 226.6666666667,
+          "syllableRoman": "Ne",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 17,
+      "indexOneBased": 18,
+      "name": "Jyeshtha",
+      "startSiderealLongitudeDegInclusive": 226.6666666667,
+      "endSiderealLongitudeDegExclusive": 240.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 226.6666666667,
+          "endSiderealLongitudeDegExclusive": 230.0,
+          "syllableRoman": "No",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 230.0,
+          "endSiderealLongitudeDegExclusive": 233.3333333333,
+          "syllableRoman": "Ya",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 233.3333333333,
+          "endSiderealLongitudeDegExclusive": 236.6666666667,
+          "syllableRoman": "Yi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 236.6666666667,
+          "endSiderealLongitudeDegExclusive": 240.0,
+          "syllableRoman": "Yu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 18,
+      "indexOneBased": 19,
+      "name": "Mula",
+      "startSiderealLongitudeDegInclusive": 240.0,
+      "endSiderealLongitudeDegExclusive": 253.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 240.0,
+          "endSiderealLongitudeDegExclusive": 243.3333333333,
+          "syllableRoman": "Ye",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 243.3333333333,
+          "endSiderealLongitudeDegExclusive": 246.6666666667,
+          "syllableRoman": "Yo",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 246.6666666667,
+          "endSiderealLongitudeDegExclusive": 250.0,
+          "syllableRoman": "Bha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 250.0,
+          "endSiderealLongitudeDegExclusive": 253.3333333333,
+          "syllableRoman": "Bhi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 19,
+      "indexOneBased": 20,
+      "name": "Purva Ashadha",
+      "startSiderealLongitudeDegInclusive": 253.3333333333,
+      "endSiderealLongitudeDegExclusive": 266.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 253.3333333333,
+          "endSiderealLongitudeDegExclusive": 256.6666666667,
+          "syllableRoman": "Bhu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 256.6666666667,
+          "endSiderealLongitudeDegExclusive": 260.0,
+          "syllableRoman": "Dha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 260.0,
+          "endSiderealLongitudeDegExclusive": 263.3333333333,
+          "syllableRoman": "Pha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 263.3333333333,
+          "endSiderealLongitudeDegExclusive": 266.6666666667,
+          "syllableRoman": "Dha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 20,
+      "indexOneBased": 21,
+      "name": "Uttara Ashadha",
+      "startSiderealLongitudeDegInclusive": 266.6666666667,
+      "endSiderealLongitudeDegExclusive": 280.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 266.6666666667,
+          "endSiderealLongitudeDegExclusive": 270.0,
+          "syllableRoman": "Bhe",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 270.0,
+          "endSiderealLongitudeDegExclusive": 273.3333333333,
+          "syllableRoman": "Bho",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 273.3333333333,
+          "endSiderealLongitudeDegExclusive": 276.6666666667,
+          "syllableRoman": "Ja",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 276.6666666667,
+          "endSiderealLongitudeDegExclusive": 280.0,
+          "syllableRoman": "Ji",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 21,
+      "indexOneBased": 22,
+      "name": "Shravana",
+      "startSiderealLongitudeDegInclusive": 280.0,
+      "endSiderealLongitudeDegExclusive": 293.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 280.0,
+          "endSiderealLongitudeDegExclusive": 283.3333333333,
+          "syllableRoman": "Khi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 283.3333333333,
+          "endSiderealLongitudeDegExclusive": 286.6666666667,
+          "syllableRoman": "Khu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 286.6666666667,
+          "endSiderealLongitudeDegExclusive": 290.0,
+          "syllableRoman": "Khe",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 290.0,
+          "endSiderealLongitudeDegExclusive": 293.3333333333,
+          "syllableRoman": "Kho",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 22,
+      "indexOneBased": 23,
+      "name": "Dhanishta",
+      "startSiderealLongitudeDegInclusive": 293.3333333333,
+      "endSiderealLongitudeDegExclusive": 306.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 293.3333333333,
+          "endSiderealLongitudeDegExclusive": 296.6666666667,
+          "syllableRoman": "Ga",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 296.6666666667,
+          "endSiderealLongitudeDegExclusive": 300.0,
+          "syllableRoman": "Gi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 300.0,
+          "endSiderealLongitudeDegExclusive": 303.3333333333,
+          "syllableRoman": "Gu",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 303.3333333333,
+          "endSiderealLongitudeDegExclusive": 306.6666666667,
+          "syllableRoman": "Ge",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 23,
+      "indexOneBased": 24,
+      "name": "Shatabhisha",
+      "startSiderealLongitudeDegInclusive": 306.6666666667,
+      "endSiderealLongitudeDegExclusive": 320.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 306.6666666667,
+          "endSiderealLongitudeDegExclusive": 310.0,
+          "syllableRoman": "Go",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 310.0,
+          "endSiderealLongitudeDegExclusive": 313.3333333333,
+          "syllableRoman": "Sa",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 313.3333333333,
+          "endSiderealLongitudeDegExclusive": 316.6666666667,
+          "syllableRoman": "Si",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 316.6666666667,
+          "endSiderealLongitudeDegExclusive": 320.0,
+          "syllableRoman": "Su",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 24,
+      "indexOneBased": 25,
+      "name": "Purva Bhadrapada",
+      "startSiderealLongitudeDegInclusive": 320.0,
+      "endSiderealLongitudeDegExclusive": 333.3333333333,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 320.0,
+          "endSiderealLongitudeDegExclusive": 323.3333333333,
+          "syllableRoman": "Se",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 323.3333333333,
+          "endSiderealLongitudeDegExclusive": 326.6666666667,
+          "syllableRoman": "So",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 326.6666666667,
+          "endSiderealLongitudeDegExclusive": 330.0,
+          "syllableRoman": "Da",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 330.0,
+          "endSiderealLongitudeDegExclusive": 333.3333333333,
+          "syllableRoman": "Di",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 25,
+      "indexOneBased": 26,
+      "name": "Uttara Bhadrapada",
+      "startSiderealLongitudeDegInclusive": 333.3333333333,
+      "endSiderealLongitudeDegExclusive": 346.6666666667,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 333.3333333333,
+          "endSiderealLongitudeDegExclusive": 336.6666666667,
+          "syllableRoman": "Du",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 336.6666666667,
+          "endSiderealLongitudeDegExclusive": 340.0,
+          "syllableRoman": "Tha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 340.0,
+          "endSiderealLongitudeDegExclusive": 343.3333333333,
+          "syllableRoman": "Jha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 343.3333333333,
+          "endSiderealLongitudeDegExclusive": 346.6666666667,
+          "syllableRoman": "Nya",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    },
+    {
+      "indexZeroBased": 26,
+      "indexOneBased": 27,
+      "name": "Revati",
+      "startSiderealLongitudeDegInclusive": 346.6666666667,
+      "endSiderealLongitudeDegExclusive": 360.0,
+      "padas": [
+        {
+          "pada": 1,
+          "startSiderealLongitudeDegInclusive": 346.6666666667,
+          "endSiderealLongitudeDegExclusive": 350.0,
+          "syllableRoman": "De",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 2,
+          "startSiderealLongitudeDegInclusive": 350.0,
+          "endSiderealLongitudeDegExclusive": 353.3333333333,
+          "syllableRoman": "Do",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 3,
+          "startSiderealLongitudeDegInclusive": 353.3333333333,
+          "endSiderealLongitudeDegExclusive": 356.6666666667,
+          "syllableRoman": "Cha",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        },
+        {
+          "pada": 4,
+          "startSiderealLongitudeDegInclusive": 356.6666666667,
+          "endSiderealLongitudeDegExclusive": 360.0,
+          "syllableRoman": "Chi",
+          "sourceIds": [
+            "S1"
+          ],
+          "status": "provisional_secondary_source"
+        }
+      ]
+    }
+  ]
+}
