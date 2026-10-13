@@ -138,7 +138,7 @@ export function validateStep(step: StepId, v: OnboardingValues): FieldErrors {
   }
   if (step === "birth") {
     if (v.birthTimeKnown === null) e.birthTimeKnown = "Tell us whether you know your birth time.";
-    if (v.birthTimeKnown === true && !parseClockTime(v.birthTime)) e.birthTime = "Enter the birth time as HH:MM (24-hour).";
+    if (v.birthTimeKnown === true && !parseClockTime(v.birthTime)) e.birthTime = "Enter the birth time as hh:mm and choose AM or PM.";
     if (v.placeMode === null) e.placeMode = "Choose how to give your birthplace, or skip it.";
     if (v.placeMode === "search" || v.placeMode === "manual") {
       const lat = parseCoordinate(v.latitude);

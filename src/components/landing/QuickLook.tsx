@@ -10,6 +10,7 @@ import { RASHI_NAMES, nakshatraDevanagari } from "@/lib/astro/names";
 import { isValidIanaTimeZone, parseClockTime, parseIsoDate } from "@/lib/astro/time";
 import { INITIAL_VALUES, saveProgress, todayIso } from "@/lib/client/onboarding";
 import { useChartPreview } from "@/lib/client/preview";
+import { TimeInput12h } from "@/components/onboarding/TimeInput12h";
 import type { BirthInput } from "@/lib/contracts/input";
 import { birthInputSchema } from "@/lib/contracts/input";
 import type { PreviewBody } from "@/lib/contracts/preview";
@@ -154,9 +155,9 @@ export function QuickLook() {
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor={ids.time} optional>
-                Birth time (24-hour)
+                Birth time
               </Label>
-              <Input id={ids.time} type="time" value={time} onChange={(e) => setTime(e.target.value)} />
+              <TimeInput12h id={ids.time} name="quickLookTime" value={time} onChange={setTime} />
             </div>
             <div className="flex flex-col gap-1.5">
               <Label htmlFor={ids.zone} optional>

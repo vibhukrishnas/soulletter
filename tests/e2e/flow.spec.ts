@@ -37,7 +37,10 @@ async function fillProfile(page: Page, date = "1990-10-15") {
 
 async function fillBirthKnown(page: Page) {
   await page.getByRole("radio", { name: /^yes/i }).check();
-  await page.getByLabel("Birth time (24-hour clock)").fill("14:30");
+  const time = page.getByRole("textbox", { name: "Birth time", exact: true });
+  await time.pressSequentially("230"); // the colon is inserted automatically
+  await expect(time).toHaveValue("02:30");
+  await page.getByRole("radio", { name: "PM", exact: true }).check();
   await page.getByRole("radio", { name: /search/i }).check();
   await page.getByRole("combobox").fill("New Delhi");
   await page.getByRole("option", { name: /New Delhi/ }).click();
@@ -137,7 +140,10 @@ test("missing location: reading still works with reduced coverage", async ({ pag
   await page.goto("/discover");
   await fillProfile(page);
   await page.getByRole("radio", { name: /^yes/i }).check();
-  await page.getByLabel("Birth time (24-hour clock)").fill("14:30");
+  // A pasted 24-hour time is converted to 02:30 with PM selected.
+  await page.getByRole("textbox", { name: "Birth time", exact: true }).fill("14:30");
+  await expect(page.getByRole("textbox", { name: "Birth time", exact: true })).toHaveValue("02:30");
+  await expect(page.getByRole("radio", { name: "PM", exact: true })).toBeChecked();
   await page.getByRole("radio", { name: /skip/i }).check();
   await continueTo(page);
   await acknowledgeAndReview(page);
@@ -254,7 +260,8 @@ test("landing quick look calculates the visitor's Rashi and Nakshatra", async ({
   await page.goto("/");
   const section = page.locator("#quick-look");
   await section.getByLabel("Date of birth").fill("1990-10-15");
-  await section.getByLabel(/Birth time/).fill("14:30");
+  await section.getByRole("textbox", { name: /^Birth time/ }).pressSequentially("0230");
+  await section.getByRole("radio", { name: "PM", exact: true }).check();
   await section.getByLabel(/Time zone/).fill("Asia/Kolkata");
   await expect(section).toContainText("Simha", { timeout: 15_000 });
   await expect(section).toContainText("Purva Phalguni");

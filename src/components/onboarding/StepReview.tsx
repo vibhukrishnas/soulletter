@@ -12,6 +12,7 @@ import {
   type StepId,
 } from "@/lib/client/onboarding";
 import { getRule } from "@/lib/rules/registry";
+import { formatTime12h } from "@/lib/client/time12";
 import { ACCURACY_OPTIONS, PLACE_MODE_OPTIONS } from "./StepBirth";
 import { StepHeading } from "./StepHeading";
 import { KARAKA_OPTIONS, LIFE_PATH_OPTIONS, MASTER_OPTIONS, NODE_OPTIONS } from "./StepPreferences";
@@ -102,7 +103,7 @@ export function StepReview({ values, errors, onEdit, preview, numerology }: Step
           {values.birthTimeKnown === null
             ? "Not answered"
             : values.birthTimeKnown
-              ? `${values.birthTime || "—"} (24-hour), ${labelOf(ACCURACY_OPTIONS, values.birthTimeAccuracy).toLowerCase()}`
+              ? `${values.birthTime ? formatTime12h(values.birthTime) : "—"}, ${labelOf(ACCURACY_OPTIONS, values.birthTimeAccuracy).toLowerCase()}`
               : "Not known — the whole birth date will be considered"}
         </Row>
         {values.dstChoice ? (

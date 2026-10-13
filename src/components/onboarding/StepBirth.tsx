@@ -9,6 +9,7 @@ import { StepHeading } from "./StepHeading";
 import type { StepProps } from "./step-props";
 import type { PreviewState } from "@/lib/client/preview";
 import { LiveChartSummary } from "./LiveChart";
+import { TimeInput12h } from "./TimeInput12h";
 import { TimeZoneField } from "./TimeZoneField";
 
 export const ACCURACY_OPTIONS: readonly { value: BirthTimeAccuracy; label: string; description: string }[] = [
@@ -79,24 +80,13 @@ export function StepBirth({ values, errors, onChange, preview }: StepProps & { p
           <div className="flex flex-col gap-6">
             <Field
               id={FIELD_IDS.birthTime}
-              label="Birth time (24-hour clock)"
+              label="Birth time"
               required
               error={errors.birthTime}
-              hint="Local time where you were born, as HH:MM — for example 09:05 or 14:30."
+              hint="Local time where you were born. Type the digits — the colon is added for you — then choose AM or PM, e.g. 02:30 PM."
             >
               {(control) => (
-                <Input
-                  {...control}
-                  type="text"
-                  name="birthTime"
-                  inputMode="numeric"
-                  autoComplete="off"
-                  placeholder="HH:MM"
-                  pattern="[0-2][0-9]:[0-5][0-9]"
-                  value={values.birthTime}
-                  onChange={(e) => onChange({ birthTime: e.target.value })}
-                  className="max-w-40 font-mono tracking-wider"
-                />
+                <TimeInput12h control={control} value={values.birthTime} onChange={(v) => onChange({ birthTime: v })} />
               )}
             </Field>
             <RadioGroup
